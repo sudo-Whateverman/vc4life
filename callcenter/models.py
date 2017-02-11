@@ -5,12 +5,25 @@ from django.utils import timezone
 
 
 class Profile(models.Model):
+    levels_field = {
+        'major': 'רב סרן',
+        'lieutenant colonel':'סגן אלוף',
+        'colonel': 'אלוף משנה',
+        'brigadier general': 'תת אלוף',
+        'lieutenant general': 'אלוף',
+        'chief of general staff': 'רב אלוף',
+        'VCTech' : 'טכנאי מערכת',
+        'special privilege' : 'הרשאה מיוחדת'
+    }
+    pikudim = ['tzafon', 'merkaz', 'darom', 'ha-oref', 'ha-omek']
+    levels_field_iter = list(levels_field)
     profile = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
-    Level = models.TextField()
+    name = models.CharField(max_length=200)
+    Level = models.TextField(choices=levels_field_iter)
     created_date = models.DateTimeField(
         default=timezone.now)
-    pikud = models.TextField()
+    pikud = models.CharField(max_length=30, choices=pikudim)
 
     def __str__(self):
         return self.title
@@ -25,7 +38,7 @@ class VideoCall(models.Model):
     )
     starting_time = models.DateTimeField(
         default=timezone.now())
-    participants = models.TextField()  # change this to many to one key
+    participants = models.TextField()  # change this to many to many key
     # add more conversation properties
 
     def __str__(self):
