@@ -30,3 +30,11 @@ def Homepage(request):
 class AboutPageView(TemplateView):
     template_name = "about.html"
 
+def editprofile_view(request):
+    return render(request, 'editprofile.html')
+
+def status_view(request):
+    return render(request, 'status.html')
+
+def create_vc(request):
+    return render(request, 'vc_create.html')
