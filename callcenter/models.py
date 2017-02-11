@@ -51,3 +51,6 @@ class VideoCall(models.Model):
 
     def __str__(self):
         return self.VC_id
+
+class Fake(models.Model):
+    empty = models.BooleanField(default=False)
