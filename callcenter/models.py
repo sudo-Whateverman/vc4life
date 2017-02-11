@@ -44,11 +44,8 @@ class VideoCall(models.Model):
     )
     status = models.TextField(choices=status_field, default='pending approval')
     VC_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    request_time = models.DateTimeField(
-        default=timezone.now()
-    )
-    starting_time = models.DateTimeField(
-        default=timezone.now())
+    request_time = models.DateTimeField()
+    starting_time = models.DateTimeField()
     participants = models.TextField()  # change this to many to many key
     # add more conversation properties
 
