@@ -24,9 +24,9 @@ class Profile(models.Model):
     )
     levels_field_iter = tuple(levels_field)
     profile = models.ForeignKey('auth.User')
-    title = models.CharField(max_length=200)
-    name = models.CharField(max_length=200)
-    Level = models.TextField(choices=levels_field_iter)
+    title = models.CharField(max_length=60)
+    name = models.CharField(max_length=60)
+    Level = models.CharField(max_length=30, choices=levels_field_iter)
     created_date = models.DateTimeField(
         default=timezone.now)
     pikud = models.CharField(max_length=30, choices=pikudim)
@@ -42,15 +42,12 @@ class VideoCall(models.Model):
         ('R', 'Rejected'),
         ('C', 'Completed'),
     )
-    status = models.TextField(choices=status_field, default='pending approval')
-    VC_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    status = models.CharField(choices=status_field, default='pending approval', max_length=20)
+    VC_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False, unique=True)
     request_time = models.DateTimeField()
     starting_time = models.DateTimeField()
-    participants = models.TextField()  # change this to many to many key
+    participants = models.ManyToManyField(Profile)  # change this to many to many key
     # add more conversation properties
 
     def __str__(self):
-        return self.VC_id
-
-class Fake(models.Model):
-    empty = models.BooleanField(default=False)
+        return str(self.VC_id)
