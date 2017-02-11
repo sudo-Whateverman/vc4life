@@ -23,7 +23,7 @@ class Profile(models.Model):
         ('DeepOp', 'העומק')
     )
     levels_field_iter = tuple(levels_field)
-    profile = models.ForeignKey('auth.User')
+    profile = models.OneToOneField('auth.User', unique=True)
     title = models.CharField(max_length=60)
     name = models.CharField(max_length=60)
     Level = models.CharField(max_length=30, choices=levels_field_iter)

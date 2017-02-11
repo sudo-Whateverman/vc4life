@@ -8,7 +8,7 @@ urlpatterns = [
     url(r'^$', views.Homepage, name='HomePage'),
     url(r'^login/$', auth_views.login, name='login'),
     url(r'^logout/$', auth_views.logout, name='logout'),
-    url(r'^about/$', views.AboutPageView.as_view()),
+    url(r'^about/$', views.about_page, name='about'),
     url(r'^editprofile/$', views.editprofile_view, name='editprofile'),  # add redirect to own profile
     ## TODO: check if user is authorized to edit a profile.
     ## TODO: change model etc.for
