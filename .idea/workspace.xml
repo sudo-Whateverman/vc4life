@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="861653bf-9bb3-4969-97fb-59748e2472c1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/templates/about.html" afterPath="$PROJECT_DIR$/callcenter/templates/about.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/templates/base.html" afterPath="$PROJECT_DIR$/callcenter/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/templates/base_david.html" afterPath="$PROJECT_DIR$/callcenter/templates/base_david.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/forms.py" afterPath="$PROJECT_DIR$/callcenter/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/templates/index.html" afterPath="$PROJECT_DIR$/callcenter/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/models.py" afterPath="$PROJECT_DIR$/callcenter/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/templates/problems.html" afterPath="$PROJECT_DIR$/callcenter/templates/problems.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/templates/status.html" afterPath="$PROJECT_DIR$/callcenter/templates/status.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/templates/statusphys.html" afterPath="$PROJECT_DIR$/callcenter/templates/statusphys.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/templates/troubleshoot.html" afterPath="$PROJECT_DIR$/callcenter/templates/troubleshoot.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/templates/vc_create.html" afterPath="$PROJECT_DIR$/callcenter/templates/vc_create.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/views/videoconference_views.py" afterPath="$PROJECT_DIR$/callcenter/views/videoconference_views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vc4life.iws" />
@@ -69,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/callcenter/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8142857">
+            <state vertical-scroll-proportion="0.0">
               <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
@@ -109,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/callcenter/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3448275">
-              <caret line="89" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="95" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.4954955">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -161,7 +150,6 @@
         <option value="$PROJECT_DIR$/callcenter/templates/vc_create.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/troubleshoot.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/problems.html" />
-        <option value="$PROJECT_DIR$/callcenter/templates/base.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/statusphys.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/status.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/about.html" />
@@ -169,6 +157,7 @@
         <option value="$PROJECT_DIR$/callcenter/models.py" />
         <option value="$PROJECT_DIR$/callcenter/views/videoconference_views.py" />
         <option value="$PROJECT_DIR$/callcenter/forms.py" />
+        <option value="$PROJECT_DIR$/callcenter/templates/base.html" />
       </list>
     </option>
   </component>
@@ -698,12 +687,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486926932064</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="-- ported all functions to bootstrap&#10;-- fixed vc creation bug. now it works. &#10;">
+      <created>1486934635445</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1486934635445</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="24" width="1311" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2166149" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -714,7 +709,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31029186" sideWeight="0.7531546" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31029186" sideWeight="0.7531546" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -773,7 +768,8 @@
     <MESSAGE value="-- added troubleshooting guide" />
     <MESSAGE value="-- changed the views placement to make smaller modules" />
     <MESSAGE value="-- made a test page" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- made a test page" />
+    <MESSAGE value="-- ported all functions to bootstrap&#10;-- fixed vc creation bug. now it works. &#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- ported all functions to bootstrap&#10;-- fixed vc creation bug. now it works. &#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1093,14 +1089,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/callcenter/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3448275">
-          <caret line="89" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="95" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/callcenter/templates/problems.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -1167,6 +1155,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/callcenter/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/callcenter/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1177,10 +1173,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/callcenter/forms.py">
+    <entry file="file://$PROJECT_DIR$/callcenter/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8142857">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4954955">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
