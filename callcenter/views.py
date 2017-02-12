@@ -1,4 +1,5 @@
-from .models import Profile
+import uuid
+from .models import Profile, VideoCall
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from django.views.generic import TemplateView
@@ -40,7 +41,12 @@ def editprofile_view(request):
 
 @login_required()
 def status_view(request):
-    return render(request, 'status.html')
+    try:
+        obj = Profile.objects.get(profile=request.user)
+    except ObjectDoesNotExist:
+        return redirect('/problems/')
+    calls = VideoCall.objects.filter(status='P')
+    return render(request, 'status.html', {'calls': calls})
 
 @login_required()
 def create_vc(request):
@@ -55,7 +61,10 @@ def create_vc(request):
             vcall = form.save(commit=False)
             vcall.vc_head = obj
             vcall.save()
+            form.save_m2m()
             return redirect('/')
+        else:
+            return redirect('/problems/')
     else:
         form = VCallForm()
         ## TODO: show only people the person can actually invite

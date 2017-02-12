@@ -5,6 +5,21 @@
     <title></title>
 </head>
 <body>
-
+<h1>Pending Calls</h1><br>
+{% if not calls %}
+    <h1>NOTHING HERE</h1>
+{% else %}
+    {% for call in calls %}
+    <div><p>
+        id is :{{ call.VC_id }} <br>
+        starting time :{{ call.starting_time }}<br>
+        participants:
+        {% for participant in call.participants.all %}
+            {{ participant.name }}<br>
+        {% endfor %}
+        vc head:{{ call.vc_head.name |linebreaksbr }}<br></p>
+    </div>
+    {% endfor %}
+{% endif %}
 </body>
 </html>

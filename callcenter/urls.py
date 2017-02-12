@@ -10,9 +10,6 @@ urlpatterns = [
     url(r'^logout/$', auth_views.logout, name='logout'),
     url(r'^about/$', views.about_page, name='about'),
     url(r'^editprofile/$', views.editprofile_view, name='editprofile'),  # add redirect to own profile
-    ## TODO: check if user is authorized to edit a profile.
-    ## TODO: change model etc.for
-    ## TODO: automaticaly redirect to needed profile
     url(r'^status/$', views.status_view, name='status'),
     ## TODO: somehow get the ip to check status from
     ## TODO: check tablet status, AND check voiceconference status

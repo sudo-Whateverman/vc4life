@@ -42,7 +42,7 @@ class VideoCall(models.Model):
         ('R', 'Rejected'),
         ('C', 'Completed'),
     )
-    status = models.CharField(choices=status_field, default='pending approval', max_length=20)
+    status = models.CharField(choices=status_field, default='P', max_length=20)
     VC_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False, unique=True)
     request_time = models.DateTimeField(default=timezone.now)
     starting_time = models.DateTimeField()
