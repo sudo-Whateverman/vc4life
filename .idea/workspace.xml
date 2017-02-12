@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="861653bf-9bb3-4969-97fb-59748e2472c1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/callcenter/templates/passwordreset.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/templates/base.html" afterPath="$PROJECT_DIR$/callcenter/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/views/misc_views.py" afterPath="$PROJECT_DIR$/callcenter/views/misc_views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/urls.py" afterPath="$PROJECT_DIR$/callcenter/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vc4life.iws" />
@@ -24,6 +27,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/callcenter/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9">
+              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="passwordreset.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/callcenter/templates/passwordreset.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.0">
+              <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="troubleshoot.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/callcenter/templates/troubleshoot.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="base_david.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/callcenter/templates/base_david.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,16 +101,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="problems.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/callcenter/templates/problems.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/callcenter/templates/about.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -88,21 +111,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="statusphys.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/callcenter/templates/statusphys.html">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/callcenter/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6666667">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="19" />
+            <state vertical-scroll-proportion="-1.2222222">
+              <caret line="28" column="60" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/callcenter/templates/base.html">
+      <file leaf-file-name="misc_views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/callcenter/views/misc_views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4954955">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -142,8 +165,6 @@
         <option value="$PROJECT_DIR$/callcenter/migrations/views/misc_views.py" />
         <option value="$PROJECT_DIR$/callcenter/migrations/views/__init__.py" />
         <option value="$PROJECT_DIR$/callcenter/views/__init__.py" />
-        <option value="$PROJECT_DIR$/callcenter/urls.py" />
-        <option value="$PROJECT_DIR$/callcenter/views/misc_views.py" />
         <option value="$PROJECT_DIR$/callcenter/templates/base_david.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/editprofile.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/index.html" />
@@ -157,7 +178,10 @@
         <option value="$PROJECT_DIR$/callcenter/models.py" />
         <option value="$PROJECT_DIR$/callcenter/views/videoconference_views.py" />
         <option value="$PROJECT_DIR$/callcenter/forms.py" />
+        <option value="$PROJECT_DIR$/callcenter/templates/passwordreset.html" />
+        <option value="$PROJECT_DIR$/callcenter/views/misc_views.py" />
         <option value="$PROJECT_DIR$/callcenter/templates/base.html" />
+        <option value="$PROJECT_DIR$/callcenter/urls.py" />
       </list>
     </option>
   </component>
@@ -693,7 +717,13 @@
       <option name="project" value="LOCAL" />
       <updated>1486934635445</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="-- added approve calls tab">
+      <created>1486935028660</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1486935028660</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -769,10 +799,19 @@
     <MESSAGE value="-- changed the views placement to make smaller modules" />
     <MESSAGE value="-- made a test page" />
     <MESSAGE value="-- ported all functions to bootstrap&#10;-- fixed vc creation bug. now it works. &#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- ported all functions to bootstrap&#10;-- fixed vc creation bug. now it works. &#10;" />
+    <MESSAGE value="-- added approve calls tab" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- added approve calls tab" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/callcenter/urls.py</url>
+          <line>4</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -1023,24 +1062,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/callcenter/views/misc_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1571429">
-          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#50#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/callcenter/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vc4life/static/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1061,14 +1082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.0">
           <caret line="18" column="6" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/callcenter/templates/troubleshoot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1109,14 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="163" column="8" selection-start-line="163" selection-start-column="8" selection-end-line="163" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/callcenter/templates/base_david.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9743589">
-          <caret line="98" column="10" selection-start-line="80" selection-start-column="4" selection-end-line="98" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1173,10 +1178,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/callcenter/views/misc_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callcenter/templates/troubleshoot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callcenter/templates/base_david.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9743589">
+          <caret line="98" column="10" selection-start-line="80" selection-start-column="4" selection-end-line="98" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callcenter/templates/passwordreset.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/callcenter/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4954955">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state vertical-scroll-proportion="-1.2222222">
+          <caret line="28" column="60" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callcenter/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
           <folding />
         </state>
       </provider>

@@ -1,3 +1,5 @@
+from django.contrib.auth.views import password_reset
+
 __author__ = 'nick'
 
 from django.conf.urls import url
@@ -18,5 +20,6 @@ urlpatterns = [
     url(r'^vc_create/$', views.create_vc, name='vc_create'),
     url(r'^problems/$', views.problem_page, name='problem'),
     url(r'^troubleshoot/$', views.troubleshoot, name='troubleshoot'),
-    url(r'^test/$', views.test, name='test')
+    url(r'^test/$', views.test, name='test'),
+    url(r'^password_reset/$', views.password_reset, name='reset'),
 ]

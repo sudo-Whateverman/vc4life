@@ -1,6 +1,9 @@
 from callcenter.check_by_ip_interface import check
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import PasswordResetForm
+from django.contrib.auth.tokens import default_token_generator
 from django.shortcuts import render
+from django.views.decorators.csrf import csrf_protect
 
 __author__ = 'nick'
 @login_required()
@@ -26,3 +29,6 @@ def troubleshoot(request):
 
 def test(request):
     return render(request, 'base_david.html')
+
+def password_reset(request):
+    return render(request, 'passwordreset.html')
