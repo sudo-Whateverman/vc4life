@@ -46,10 +46,16 @@ def create_vc(request):
     if request.method == "POST":
         form = VCallForm(data=request.POST)
         if form.is_valid():
+            ## TODO : add check that people can be invited.
             vcall = form.save(commit=False)
             vcall.vc_head = obj
             vcall.save()
             return redirect('/')
     else:
         form = VCallForm()
+        ## TODO: show only people the person can actually invite
+        ## TODO: add line completion widget to names so typing would be fast
         return render(request, 'vc_create.html', {'form': form})
+
+def problem_page(request):
+    return render(request, 'problems.html')

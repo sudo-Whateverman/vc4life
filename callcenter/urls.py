@@ -17,5 +17,6 @@ urlpatterns = [
     ## TODO: somehow get the ip to check status from
     ## TODO: check tablet status, AND check voiceconference status
     ## TODO: create placeholder interface and link to troubleshoot
-    url(r'^vc_create/$', views.create_vc, name='vc_create')
+    url(r'^vc_create/$', views.create_vc, name='vc_create'),
+    url(r'^problems/$', views.problem_page, name='problem')
 ]
