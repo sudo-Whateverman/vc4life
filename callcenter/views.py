@@ -4,6 +4,7 @@ from django.utils import timezone
 from django.views.generic import TemplateView
 from django.contrib.auth.decorators import login_required
 from .forms import ProfileForm, VCallForm
+from django.core.exceptions import ObjectDoesNotExist
 
 
 class HomePageView(TemplateView):
@@ -21,7 +22,10 @@ def about_page(request):
 
 @login_required()
 def editprofile_view(request):
-    obj = get_object_or_404(Profile, profile=request.user)
+    try:
+        obj = Profile.objects.get(Profile, profile=request.user)
+    except ObjectDoesNotExist:
+        return redirect('/problems/')
     if request.method == "POST":
         form = ProfileForm(data=request.POST, instance=obj)
         if form.is_valid():
@@ -40,8 +44,9 @@ def status_view(request):
 
 @login_required()
 def create_vc(request):
-    obj = Profile.objects.get(profile=request.user)
-    if obj is None:
+    try:
+        obj = Profile.objects.get(profile=request.user)
+    except ObjectDoesNotExist:
         return redirect('/problems/')
     if request.method == "POST":
         form = VCallForm(data=request.POST)
