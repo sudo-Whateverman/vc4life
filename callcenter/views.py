@@ -1,4 +1,5 @@
 import uuid
+from callcenter.check_by_ip_interface import check
 from .models import Profile, VideoCall
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
@@ -100,3 +101,7 @@ def create_vc(request):
 
 def problem_page(request):
     return render(request, 'problems.html')
+
+def status_view_physical(request):
+    marks = check('127.0.0.1')
+    return render(request, 'statusphys.html', {'marks': marks})
