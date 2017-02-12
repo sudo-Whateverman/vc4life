@@ -5,7 +5,7 @@ from callcenter import views
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
-    url(r'^$', views.Homepage, name='HomePage'),
+    url(r'^$', views.homepage, name='HomePage'),
     url(r'^login/$', auth_views.login, name='login'),
     url(r'^logout/$', auth_views.logout, name='logout'),
     url(r'^about/$', views.about_page, name='about'),

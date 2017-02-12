@@ -26,7 +26,7 @@ class Profile(models.Model):
     profile = models.OneToOneField('auth.User', unique=True)
     title = models.CharField(max_length=60)
     name = models.CharField(max_length=60)
-    Level = models.CharField(max_length=30, choices=levels_field_iter)
+    level = models.CharField(max_length=30, choices=levels_field_iter)
     created_date = models.DateTimeField(
         default=timezone.now)
     pikud = models.CharField(max_length=30, choices=pikudim)
@@ -46,8 +46,22 @@ class VideoCall(models.Model):
     VC_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False, unique=True)
     request_time = models.DateTimeField()
     starting_time = models.DateTimeField()
-    participants = models.ManyToManyField(Profile)  # change this to many to many key
+    participants = models.ManyToManyField(Profile, related_name='participants')
+    vc_head = models.ForeignKey(Profile, default=Profile.objects.get(pk='1').pk, related_name='vc_head')  # use request.user to get currently logged user.
     # add more conversation properties
 
     def __str__(self):
         return str(self.VC_id)
+
+class VCallcenter(models.Model):
+    name_of_callcenter = models.CharField(max_length=60)
+    capacity = models.IntegerField()
+    current_videocalls = models.ManyToManyField(VideoCall)
+    status_field = (
+        ('NW', 'Not Working'),
+        ('W', 'Working'),
+        ('M', 'Maintenance'),
+        ('R', 'Reserved'),
+        ('DNR', 'Does Not Respond')
+    )
+    status = models.CharField(choices=status_field, max_length=30)
