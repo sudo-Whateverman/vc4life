@@ -45,7 +45,34 @@ def status_view(request):
         obj = Profile.objects.get(profile=request.user)
     except ObjectDoesNotExist:
         return redirect('/problems/')
-    calls = VideoCall.objects.filter(status='P')
+    calls = VideoCall.objects.filter(status='P', vc_head=obj)
+    return render(request, 'status.html', {'calls': calls})
+
+@login_required()
+def status_view_pending(request):
+    try:
+        obj = Profile.objects.get(profile=request.user)
+    except ObjectDoesNotExist:
+        return redirect('/problems/')
+    calls = VideoCall.objects.filter(status='P', vc_head=obj)
+    return render(request, 'status.html', {'calls': calls})
+
+@login_required()
+def status_view_rejected(request):
+    try:
+        obj = Profile.objects.get(profile=request.user)
+    except ObjectDoesNotExist:
+        return redirect('/problems/')
+    calls = VideoCall.objects.filter(status='R', vc_head=obj)
+    return render(request, 'status.html', {'calls': calls})
+
+@login_required()
+def status_view_approved(request):
+    try:
+        obj = Profile.objects.get(profile=request.user)
+    except ObjectDoesNotExist:
+        return redirect('/problems/')
+    calls = VideoCall.objects.filter(status='A', vc_head=obj)
     return render(request, 'status.html', {'calls': calls})
 
 @login_required()

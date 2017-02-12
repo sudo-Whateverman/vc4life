@@ -11,6 +11,9 @@ urlpatterns = [
     url(r'^about/$', views.about_page, name='about'),
     url(r'^editprofile/$', views.editprofile_view, name='editprofile'),  # add redirect to own profile
     url(r'^status/$', views.status_view, name='status'),
+    url(r'^status/approved/$', views.status_view_approved, name='status'),
+    url(r'^status/rejected/$', views.status_view_rejected, name='status'),
+
     ## TODO: somehow get the ip to check status from
     ## TODO: check tablet status, AND check voiceconference status
     ## TODO: create placeholder interface and link to troubleshoot
