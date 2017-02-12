@@ -21,5 +21,5 @@ urlpatterns = [
     url(r'^problems/$', views.problem_page, name='problem'),
     url(r'^troubleshoot/$', views.troubleshoot, name='troubleshoot'),
     url(r'^test/$', views.test, name='test'),
-    url(r'^password_reset/$', views.password_reset, name='reset'),
+    url(r'^password_reset/$', views.change_password, name='reset'),
 ]
