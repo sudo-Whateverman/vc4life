@@ -23,3 +23,6 @@ def status_view_physical(request):
 
 def troubleshoot(request):
     return render(request, 'troubleshoot.html')
+
+def test(request):
+    return render(request, 'base_david.html')

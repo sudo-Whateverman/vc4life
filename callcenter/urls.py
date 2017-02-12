@@ -18,4 +18,5 @@ urlpatterns = [
     url(r'^vc_create/$', views.create_vc, name='vc_create'),
     url(r'^problems/$', views.problem_page, name='problem'),
     url(r'^troubleshoot/$', views.troubleshoot, name='troubleshoot'),
+    url(r'^test/$', views.test, name='test')
 ]
