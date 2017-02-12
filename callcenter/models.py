@@ -44,7 +44,7 @@ class VideoCall(models.Model):
     )
     status = models.CharField(choices=status_field, default='pending approval', max_length=20)
     VC_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False, unique=True)
-    request_time = models.DateTimeField()
+    request_time = models.DateTimeField(default=timezone.now)
     starting_time = models.DateTimeField()
     participants = models.ManyToManyField(Profile, related_name='participants')
     vc_head = models.ForeignKey(Profile, default=Profile.objects.get(pk='1').pk, related_name='vc_head')  # use request.user to get currently logged user.

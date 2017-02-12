@@ -3,7 +3,8 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from django.views.generic import TemplateView
 from django.contrib.auth.decorators import login_required
-from .forms import ProfileForm
+from .forms import ProfileForm, VCallForm
+
 
 class HomePageView(TemplateView):
     def get(self, request, **kwargs):
@@ -39,4 +40,16 @@ def status_view(request):
 
 @login_required()
 def create_vc(request):
-    return render(request, 'vc_create.html')
+    obj = Profile.objects.get(profile=request.user)
+    if obj is None:
+        return redirect('/problems/')
+    if request.method == "POST":
+        form = VCallForm(data=request.POST)
+        if form.is_valid():
+            vcall = form.save(commit=False)
+            vcall.vc_head = obj
+            vcall.save()
+            return redirect('/')
+    else:
+        form = VCallForm()
+        return render(request, 'vc_create.html', {'form': form})
