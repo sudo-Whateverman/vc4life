@@ -18,7 +18,11 @@
     {% if stats.1 == 'OK' %}
         <p>{{stats.0}}: <span class="glyphicon glyphicon-ok"></span></p>
     {% else %}
-        <p>{{stats.0}}: <span class="glyphicon glyphicon-remove"></span></p>
+        <p>{{stats.0}}:
+        <a href="/troubleshoot/">
+          <span class="glyphicon glyphicon-remove"></span>
+        </a>
+      </p>
     {% endif %}
 {% endfor %}
 <a href="/status/">Pending</a>

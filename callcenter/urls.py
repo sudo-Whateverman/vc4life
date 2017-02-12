@@ -16,5 +16,6 @@ urlpatterns = [
     url(r'^status/physical/$', views.status_view_physical, name='physical'),
     ## TODO: somehow get the ip to check status from
     url(r'^vc_create/$', views.create_vc, name='vc_create'),
-    url(r'^problems/$', views.problem_page, name='problem')
+    url(r'^problems/$', views.problem_page, name='problem'),
+    url(r'^troubleshoot/$', views.troubleshoot, name='troubleshoot'),
 ]

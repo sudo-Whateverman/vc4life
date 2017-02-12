@@ -25,7 +25,7 @@ def about_page(request):
 @login_required()
 def editprofile_view(request):
     try:
-        obj = Profile.objects.get(Profile, profile=request.user)
+        obj = Profile.objects.get(profile=request.user)
     except ObjectDoesNotExist:
         return redirect('/problems/')
     if request.method == "POST":
@@ -105,3 +105,6 @@ def problem_page(request):
 def status_view_physical(request):
     marks = check('127.0.0.1')
     return render(request, 'statusphys.html', {'marks': marks})
+
+def troubleshoot(request):
+    return render(request, 'troubleshoot.html')
