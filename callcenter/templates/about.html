@@ -1,15 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-Alex Ilgayev The man. <br>
-Nick Kuhlik The beast. <br>
-David Peled The Machine. <br>
-trademark limited copyrighted.<br>
+{% extends 'base.html' %}
 
-<a href="/">Go Home</a>
-</body>
-</html>
+{% block content %}
+<div class="page-header">
+		<h1>About<br><small>about VCteam</small></h1>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6">
+				<p>
+					some paragraph about VCteam.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<p>
+					phone numbers:
+				</p>
+			</div>
+		</div>
+	</div>
+{% endblock %}

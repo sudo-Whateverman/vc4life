@@ -25,51 +25,53 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My profile<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/myscadual">My VC scadual</a></li>
-								<li><a href="/aprovecalls">Edit profile</a></li>
-								<li><a href="/chngpass">Change password</a></li>
-								<li><a href="/logout">Logout</a></li>
+								<li><a href="/editprofile/">Edit profile</a></li>
+								<li><a href="/changepass/">Change password</a></li>
+								<li><a href="/logout/">Logout</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Confrence<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/VcReq">Add Confrence request</a></li>
-								<li><a href="/mycalls">My Approved calls</a></li>
-								<li><a href="/myscadual">My VC scadual</a></li>
+								<li><a href="/vc_create/">Add Confrence request</a></li>
+								<li><a href="/status/">My Approved calls</a></li>
+								<li><a href="/status/approved/">My VC schedule</a></li>
+								{% if request.user.is_superuser %}
 								<li><a href="/aprovecalls">Approve calls</a></li>
-								<li><a href="/mng">Manage confrance</a></li>
+								{% endif %}
+								<li><a href="/mng/">Manage conference</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">How to<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/setup">setup new system</a></li>
-								<li><a href="/soundprob">fix sound problems</a></li>
-								<li><a href="/videoprob">fix video problems</a></li>
-								<li><a href="/cameraprob">fix camera problems</a></li>
-								<li><a href="/networkprob">fix network problems</a></li>
+								<li><a href="/troubleshoot/">setup new system</a></li>
+								<li><a href="/troubleshoot/">fix sound problems</a></li>
+								<li><a href="/troubleshoot/">fix video problems</a></li>
+								<li><a href="/troubleshoot/">fix camera problems</a></li>
+								<li><a href="/troubleshoot/">fix network problems</a></li>
 							</ul>
 						</li>
+						{% if request.user.is_superuser %}
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Site mangement<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/adduser">Add user</a></li>
-								<li><a href="/aproveuser">Aprove user</a></li>
-								<li><a href="/addVCkit">Add VC kit</a></li>
-								<li><a href="/kitsync">User/Kit sync</a></li>
+								<li><a href="/admin/auth/user/add/">Add user</a></li>
+								<li><a href="/admin/callcenter/vcallcenter/add/">Add VC kit</a></li>
+								<li><a href="/kitsync/">User/Kit sync</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">System rules<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="/addlocation">Add location</a></li>
-								<li><a href="/adminsync">Administration sync</a></li>
-								<li><a href="/rmxrules">RMX rules</a></li>
-								<li><a href="/version">VC Version and distribution</a></li>
-								<li><a href="/api">Api Use</a></li>
+								<li><a href="/addlocation/">Add location</a></li>
+								<li><a href="/adminsync/">Administration sync</a></li>
+								<li><a href="/rmxrules/">RMX rules</a></li>
+								<li><a href="/version/">VC Version and distribution</a></li>
+								<li><a href="/api/">Api Use</a></li>
 							</ul>
 						</li>
+						{% endif %}
 						<li><a href="/diagnostics">My VC diagnostics</a></li>
 						<li><a href="/about">about</a></li>
 					</ul>

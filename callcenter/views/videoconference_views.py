@@ -3,6 +3,7 @@ from callcenter.models import Profile
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ObjectDoesNotExist
 from django.shortcuts import redirect, render
+from django.utils import timezone
 
 __author__ = 'nick'
 
@@ -18,6 +19,7 @@ def create_vc(request):
             ## TODO : add check that people can be invited.
             vcall = form.save(commit=False)
             vcall.vc_head = obj
+            vcall.request_time = timezone.now()
             vcall.save()
             form.save_m2m()
             return redirect('/')

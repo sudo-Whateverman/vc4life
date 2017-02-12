@@ -45,9 +45,9 @@ class VideoCall(models.Model):
     status = models.CharField(choices=status_field, default='P', max_length=20)
     VC_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False, unique=True)
     request_time = models.DateTimeField(default=timezone.now)
-    starting_time = models.DateTimeField()
-    participants = models.ManyToManyField(Profile, related_name='participants')
-    vc_head = models.ForeignKey(Profile, related_name='vc_head')  # use request.user to get currently logged user.
+    starting_time = models.DateTimeField(default=timezone.now)
+    participants = models.ManyToManyField(Profile, default=None, related_name='participants')
+    vc_head = models.ForeignKey(Profile, default=None, related_name='vc_head')  # use request.user to get currently logged user.
     # add more conversation properties
 
     def __str__(self):

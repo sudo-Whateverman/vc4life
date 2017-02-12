@@ -16,9 +16,16 @@ class VCallForm(forms.ModelForm):
 
     class Meta:
         model = VideoCall
-        fields = ('starting_time', 'participants')
+        dateTimeOptions = {
+            'format': '%Y-%m-%d %H:%M:%S',
+        }
+        fields = (
+            'starting_time',
+            'participants',
+            )
         widgets ={
-            'starting_time': DateTimeWidget(bootstrap_version=3)}
+            'starting_time': DateTimeWidget(bootstrap_version=2, usel10n=True),
+        }
 
     def __init__ (self, *args, **kwargs):
         super(VCallForm, self).__init__(*args, **kwargs)

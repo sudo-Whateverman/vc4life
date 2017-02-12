@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>index page</title>
-</head>
-<body>
-here goes buttons etc to start the app.
+{% extends 'base.html' %}
 
+{% block content %}
 <div>
     <a href="vc_create">Create a VC</a>
 </div>
@@ -22,5 +16,4 @@ here goes buttons etc to start the app.
 <div>
     <a href="logout">logout</a>
 </div>
-</body>
-</html>
+{% endblock %}
