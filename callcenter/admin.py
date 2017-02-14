@@ -3,12 +3,14 @@ import callcenter
 # Register your models here.
 from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.models import User
-from .models import Profile
+from .models import Profile, Location
+from mptt.admin import MPTTModelAdmin
 
 admin.site.register(callcenter.models.VideoCall)
 admin.site.register(callcenter.models.Profile)
 admin.site.register(callcenter.models.VCallcenter)
 admin.site.register(callcenter.models.VCkit)
+admin.site.register(Location, MPTTModelAdmin)
 #admin.site.register(callcenter.models.ApiUse)
 
 

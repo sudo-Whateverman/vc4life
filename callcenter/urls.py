@@ -25,5 +25,5 @@ urlpatterns = [
     url(r'^api/$', views.apiuse_view, name='apiuse'),
     url(r'^version/$', views.version, name='version'),
     url(r'^rmxrules/$', views.rmxrules, name='rmxrules'),
-    url(r'^test/$', views.simple_list, {'status': 'P'}, name='test'),
+    url(r'^test/$', views.test, name='test'),
 ]

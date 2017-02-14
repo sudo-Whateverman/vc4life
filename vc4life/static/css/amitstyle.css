@@ -1,0 +1,33 @@
+.formBox{
+   padding:50px;
+    width:80%;
+}
+.well {
+    font-family:David;
+    font-size:18px;
+}
+.well a{
+    font-size:16px;
+
+}
+.list-group-item{
+    font-size:16px;
+}
+a:hover{
+    background-color:lightcyan;
+}
+.expand_arrow{
+    margin: auto;
+    width: 30%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+
+}
+.arrow_img{
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+}
+.arrow_exp{
+    text-align:center;
+}

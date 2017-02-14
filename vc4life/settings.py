@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'callcenter',
     'datetimewidget',
     'django_tables2',
+    'mptt',
 ]
 
 MIDDLEWARE_CLASSES = [

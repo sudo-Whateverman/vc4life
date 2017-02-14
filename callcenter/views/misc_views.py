@@ -34,7 +34,7 @@ def troubleshoot(request):
 
 @login_required()
 def test(request):
-    return render(request, 'base_david.html')
+    return render(request, 'videoprob.html')
 
 @login_required()
 def change_password(request):

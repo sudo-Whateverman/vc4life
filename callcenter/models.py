@@ -2,7 +2,19 @@
 import uuid
 from django.db import models
 from django.utils import timezone
+from mptt.fields import TreeForeignKey
+from mptt.models import MPTTModel
 
+
+class Location(MPTTModel):
+    name = models.CharField(max_length=50, unique=True)
+    parent = TreeForeignKey('self', null=True, blank=True, related_name='children', db_index=True)
+
+    class MPTTMeta:
+        order_insertion_by = ['name']
+
+    def __str__(self):
+        return self.name
 
 class VCkit(models.Model):
     name_of_kit = models.CharField(max_length=30)
@@ -15,6 +27,7 @@ class VCkit(models.Model):
         ('DeepOp', 'העומק')
     )
     pikud = models.CharField(max_length=30, choices=pikudim)
+    location = models.OneToOneField(Location, blank=True)
 
     def __str__(self):
         return self.ip
@@ -67,6 +80,7 @@ class VideoCall(models.Model):
     participants = models.ManyToManyField(Profile, default=None, related_name='participants')
     vc_head = models.ForeignKey(Profile, default=None, related_name='vc_head')  # use request.user to get currently logged user.
     # add more conversation properties
+
 
     def __str__(self):
         return str(self.VC_id)
