@@ -60,7 +60,7 @@ class VideoCall(models.Model):
         ('C', 'Completed'),
     )
     status = models.CharField(choices=status_field, default='P', max_length=20)
-    VC_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False, unique=True)
+    VC_id = models.CharField(primary_key=True, default=uuid.uuid4, editable=False, unique=True, max_length=10)
     request_time = models.DateTimeField(default=timezone.now)
     starting_time = models.DateTimeField(default=timezone.now)
     ending_time = models.DateTimeField(default=timezone.now)

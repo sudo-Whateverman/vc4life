@@ -20,6 +20,7 @@ def create_vc(request):
             vcall = form.save(commit=False)
             vcall.vc_head = obj
             vcall.request_time = timezone.now()
+            vcall.VC_id = str(vcall.VC_id.int)[0:7]
             vcall.save()
             form.save_m2m()
             return redirect('/')
