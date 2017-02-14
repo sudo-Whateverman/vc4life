@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="861653bf-9bb3-4969-97fb-59748e2472c1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/templates/base.html" afterPath="$PROJECT_DIR$/callcenter/templates/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/templates/troubleshoot/cameraprob.html" afterPath="$PROJECT_DIR$/callcenter/templates/troubleshoot/cameraprob.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/templates/troubleshoot/networkprob.html" afterPath="$PROJECT_DIR$/callcenter/templates/troubleshoot/networkprob.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/templates/troubleshoot/videoprob.html" afterPath="$PROJECT_DIR$/callcenter/templates/troubleshoot/videoprob.html" />
@@ -62,8 +61,8 @@
       <file leaf-file-name="soundprob.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/callcenter/templates/troubleshoot/soundprob.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.4482758">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            <state vertical-scroll-proportion="-0.71794873">
+              <caret line="29" column="77" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -72,8 +71,8 @@
       <file leaf-file-name="videoprob.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/callcenter/templates/troubleshoot/videoprob.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="19" />
+            <state vertical-scroll-proportion="-1.0333333">
+              <caret line="29" column="77" selection-start-line="29" selection-start-column="77" selection-end-line="29" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -82,8 +81,8 @@
       <file leaf-file-name="networkprob.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/callcenter/templates/troubleshoot/networkprob.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.2105262">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            <state vertical-scroll-proportion="-1.0804597">
+              <caret line="30" column="77" selection-start-line="30" selection-start-column="77" selection-end-line="30" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -92,8 +91,8 @@
       <file leaf-file-name="cameraprob.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/callcenter/templates/troubleshoot/cameraprob.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40127388">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.3309859">
+              <caret line="30" column="77" selection-start-line="30" selection-start-column="77" selection-end-line="30" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -533,12 +532,6 @@
       <option name="number" value="Default" />
       <updated>1486757105523</updated>
     </task>
-    <task id="LOCAL-00016" summary="-- creation of new videocalls included.">
-      <created>1486898582110</created>
-      <option name="number" value="00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1486898582110</updated>
-    </task>
     <task id="LOCAL-00017" summary="-- added a problem view (for whatever stuff breaks)">
       <created>1486899310020</created>
       <option name="number" value="00017" />
@@ -827,7 +820,13 @@
       <option name="project" value="LOCAL" />
       <updated>1487111811156</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="-- add troubleshooting">
+      <created>1487112114335</created>
+      <option name="number" value="00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1487112114335</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1298,32 +1297,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/callcenter/templates/troubleshoot/soundprob.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4482758">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        <state vertical-scroll-proportion="-0.71794873">
+          <caret line="29" column="77" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/callcenter/templates/troubleshoot/videoprob.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="19" />
+        <state vertical-scroll-proportion="-1.0333333">
+          <caret line="29" column="77" selection-start-line="29" selection-start-column="77" selection-end-line="29" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/callcenter/templates/troubleshoot/networkprob.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2105262">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        <state vertical-scroll-proportion="-1.0804597">
+          <caret line="30" column="77" selection-start-line="30" selection-start-column="77" selection-end-line="30" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/callcenter/templates/troubleshoot/cameraprob.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40127388">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.3309859">
+          <caret line="30" column="77" selection-start-line="30" selection-start-column="77" selection-end-line="30" selection-end-column="77" />
           <folding />
         </state>
       </provider>
