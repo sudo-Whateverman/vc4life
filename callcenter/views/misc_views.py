@@ -19,7 +19,7 @@ def homepage(request):
 def about_page(request):
     return render(request, 'about.html')
 
-
+@login_required()
 def problem_page(request):
     return render(request, 'problems.html')
 
@@ -28,12 +28,15 @@ def status_view_physical(request):
     marks = check('127.0.0.1')
     return render(request, 'statusphys.html', {'marks': marks})
 
+@login_required()
 def troubleshoot(request):
     return render(request, 'troubleshoot.html')
 
+@login_required()
 def test(request):
     return render(request, 'base_david.html')
 
+@login_required()
 def change_password(request):
     if request.method == 'POST':
         form = PasswordChangeForm(request.user, request.POST)
@@ -50,6 +53,7 @@ def change_password(request):
         'form': form
     })
 
+@login_required()
 def apiuse_view(request):
     obj = ApiUse.objects.first()
     if request.method == 'POST':
@@ -61,6 +65,7 @@ def apiuse_view(request):
         form = ApiUseForm(instance=obj)
     return render(request, 'apiuse.html', {'form': form})
 
+@login_required()
 def version(request):
     obj = VCversion.objects.first()
     if request.method == 'POST':
@@ -72,6 +77,7 @@ def version(request):
         form = VersionForm(instance=obj)
     return render(request, 'apiuse.html', {'form': form})
 
+@login_required()
 def rmxrules(request):
     obj = Rmxrules.objects.first()
     if request.method == 'POST':
