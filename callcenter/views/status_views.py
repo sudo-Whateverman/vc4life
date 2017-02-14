@@ -44,6 +44,10 @@ def status_view_approved(request):
 
 @login_required()
 def simple_list(request, status):
-    queryset = VideoCall.objects.filter(status=status)
+    try:
+        obj = Profile.objects.get(profile=request.user)
+    except ObjectDoesNotExist:
+        return redirect('/problems/')
+    queryset = VideoCall.objects.filter(status=status, vc_head=obj)
     table = SimpleTableVideo(queryset)
     return render(request, 'simple_list.html', {'table': table})
