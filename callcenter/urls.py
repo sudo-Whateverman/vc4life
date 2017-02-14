@@ -20,10 +20,10 @@ urlpatterns = [
     url(r'^vc_create/$', views.create_vc, name='vc_create'),
     url(r'^problems/$', views.problem_page, name='problem'),
     url(r'^troubleshoot/$', views.troubleshoot, name='troubleshoot'),
-    url(r'^test/$', views.test, name='test'),
     url(r'^password_reset/$', views.change_password, name='reset'),
     url(r'^kitsync/$', views.editkits_view, name='kitsync'),
     url(r'^api/$', views.apiuse_view, name='apiuse'),
     url(r'^version/$', views.version, name='version'),
     url(r'^rmxrules/$', views.rmxrules, name='rmxrules'),
+    url(r'^test/$', views.simple_list, name='test'),
 ]

@@ -3,7 +3,11 @@ from datetimewidget.widgets import DateTimeWidget
 __author__ = 'nick'
 from django import forms
 from .models import Profile, VideoCall, VCkit, ApiUse, VCversion, Rmxrules
+import django_tables2 as tables
 
+class SimpleTableVideo(tables.Table):
+    class Meta:
+        model = VideoCall
 
 class ProfileForm(forms.ModelForm):
 
@@ -66,3 +70,6 @@ class RmxrulesForms(forms.ModelForm):
     class Meta:
         model = Rmxrules
         fields = ('matkal', 'tzameret_a', 'tzameret_a_redundant', 'tzameret_b')
+
+
+

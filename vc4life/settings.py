@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'callcenter',
     'datetimewidget',
+    'django_tables2',
 ]
 
 MIDDLEWARE_CLASSES = [
