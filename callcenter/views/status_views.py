@@ -43,7 +43,7 @@ def status_view_approved(request):
     return render(request, 'status.html', {'calls': calls})
 
 @login_required()
-def simple_list(request):
-    queryset = VideoCall.objects.all()
+def simple_list(request, status):
+    queryset = VideoCall.objects.filter(status=status)
     table = SimpleTableVideo(queryset)
     return render(request, 'simple_list.html', {'table': table})
