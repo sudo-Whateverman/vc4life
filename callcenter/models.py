@@ -42,7 +42,7 @@ class Profile(models.Model):
     profile = models.OneToOneField('auth.User', unique=True)
     title = models.CharField(max_length=60)
     name = models.CharField(max_length=60)
-    id_number = models.CharField(max_length=20, unique=True, blank=True)
+    id_number = models.CharField(max_length=20, unique=True, default='1')
     level = models.CharField(max_length=30, choices=levels_field_iter)
     created_date = models.DateTimeField(
         default=timezone.now)
