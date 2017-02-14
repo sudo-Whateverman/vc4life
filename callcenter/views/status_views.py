@@ -51,3 +51,4 @@ def simple_list(request, status):
     queryset = VideoCall.objects.filter(status=status, vc_head=obj)
     table = SimpleTableVideo(queryset)
     return render(request, 'simple_list.html', {'table': table})
+

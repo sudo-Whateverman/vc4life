@@ -1,6 +1,30 @@
 {% extends 'base.html' %}
+{% block extrahead %}
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="/static/css/table_django2.css">
+{% endblock %}
+{% block content %}
+{% if not table %}
+<h1>NOTHING HERE</h1>
+{% else %}
+{% load static %}
 
-    {% block content %}
+<div class="container">
+
+    <!--<h3>django_tables2 with bootstrap template example</h3>-->
+
+    <div class="row">
         {% load django_tables2 %}
         {% render_table table %}
-    {% endblock %}
+    </div>
+</div>
+</div>
+
+{% endif %}
+
+<a href="/status/pending/">Pending</a>
+<a href="/status/approved/">Approved</a>
+<a href="/status/rejected/">Rejected</a>
+
+{% endblock %}
+
