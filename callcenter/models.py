@@ -33,16 +33,6 @@ class VCkit(models.Model):
         return self.ip
 
 class Profile(models.Model):
-    levels_field = (
-        ('major', 'רב סרן'),
-        ('lieutenant colonel', 'סגן אלוף'),
-        ('colonel', 'אלוף משנה'),
-        ('brigadier general', 'תת אלוף'),
-        ('lieutenant general', 'אלוף'),
-        ('chief of general staff', 'רב אלוף'),
-        ('VCTech', 'טכנאי מערכת'),
-        ('special privilege', 'הרשאה מיוחדת')
-    )
     pikudim = (
         ('North', 'צפון'),
         ('Center', 'מרכז'),
@@ -51,15 +41,14 @@ class Profile(models.Model):
         ('DeepOp', 'העומק')
     )
     pikud = models.CharField(max_length=30, choices=pikudim)
-    levels_field_iter = tuple(levels_field)
     profile = models.OneToOneField('auth.User', unique=True)
     title = models.CharField(max_length=60)
     name = models.CharField(max_length=60)
     id_number = models.CharField(max_length=20, unique=True, default='1')
-    level = models.CharField(max_length=30, choices=levels_field_iter)
     created_date = models.DateTimeField(
         default=timezone.now)
     vckits = models.ManyToManyField(VCkit, blank=True)
+    location = models.OneToOneField(Location, default=True)
 
     def __str__(self):
         return self.title
@@ -77,10 +66,9 @@ class VideoCall(models.Model):
     request_time = models.DateTimeField(default=timezone.now)
     starting_time = models.DateTimeField(default=timezone.now)
     ending_time = models.DateTimeField(default=timezone.now)
-    participants = models.ManyToManyField(Profile, default=None, related_name='participants')
+    participants = models.ManyToManyField(VCkit, default=None, related_name='participants')
     vc_head = models.ForeignKey(Profile, default=None, related_name='vc_head')  # use request.user to get currently logged user.
     # add more conversation properties
-
 
     def __str__(self):
         return str(self.VC_id)

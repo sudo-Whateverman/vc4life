@@ -33,11 +33,11 @@ class VCallForm(forms.ModelForm):
             'ending_time': DateTimeWidget(bootstrap_version=2, usel10n=True),
         }
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, user=None,  *args, **kwargs):
         super(VCallForm, self).__init__(*args, **kwargs)
         self.fields["participants"].widget = forms.widgets.CheckboxSelectMultiple()
         self.fields["participants"].help_text = "The people you want to talk to"
-        self.fields["participants"].queryset = Profile.objects.all()  # TODO: here we need to add our  fancy filter
+        self.fields["participants"].queryset = VCkit.objects.filter(pikud=user.pikud)  # TODO: here we need to add our  fancy filter
 
 
 class ProfileKitForm(forms.ModelForm):
@@ -46,7 +46,7 @@ class ProfileKitForm(forms.ModelForm):
         model = Profile
         fields = ('vckits',)
 
-    def __init__(self, pikud_form=None, *args, **kwargs):
+    def __init__(self, pikud_form=None, location_form=None, *args, **kwargs):
         super(ProfileKitForm, self).__init__(*args, **kwargs)
         self.fields["vckits"].widget = forms.widgets.CheckboxSelectMultiple()
         self.fields["vckits"].help_text = "The kits that belong to you"
