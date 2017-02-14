@@ -29,10 +29,6 @@ def status_view_physical(request):
     return render(request, 'statusphys.html', {'marks': marks})
 
 @login_required()
-def troubleshoot(request):
-    return render(request, 'troubleshoot.html')
-
-@login_required()
 def test(request):
     return render(request, 'videoprob.html')
 
@@ -88,3 +84,17 @@ def rmxrules(request):
     else:
         form = RmxrulesForms(instance=obj)
     return render(request, 'apiuse.html', {'form': form})
+
+
+@login_required()
+def troubleshoot(request, problem):
+    if problem == 'sound':
+        return render(request, 'troubleshoot/soundprob.html')
+    elif problem == 'video':
+        return render(request, 'troubleshoot/videoprob.html')
+    elif problem == 'web':
+        return render(request, 'troubleshoot/networkprob.html')
+    elif problem == 'camera':
+        return render(request, 'troubleshoot/cameraprob.html')
+    else:
+        return render(request, 'troubleshoot.html')
