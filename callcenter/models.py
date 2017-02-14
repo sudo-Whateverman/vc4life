@@ -90,3 +90,14 @@ class ApiUse(models.Model):
     DMA_ip = models.GenericIPAddressField()
     RM_ip = models.GenericIPAddressField()
 
+class Rmxrules(models.Model):
+    matkal = models.IntegerField()
+    tzameret_a = models.IntegerField()
+    tzameret_a_redundant = models.IntegerField()
+    tzameret_b = models.IntegerField()
+
+class VCversion(models.Model):
+    VSX_version = models.CharField(max_length=100)
+    HDX_version = models.CharField(max_length=100)
+    GROUP_version = models.CharField(max_length=100)
+

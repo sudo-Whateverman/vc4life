@@ -24,4 +24,6 @@ urlpatterns = [
     url(r'^password_reset/$', views.change_password, name='reset'),
     url(r'^kitsync/$', views.editkits_view, name='kitsync'),
     url(r'^api/$', views.apiuse_view, name='apiuse'),
+    url(r'^version/$', views.version, name='version'),
+    url(r'^rmxrules/$', views.rmxrules, name='rmxrules'),
 ]

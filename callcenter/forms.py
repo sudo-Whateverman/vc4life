@@ -2,7 +2,7 @@ from datetimewidget.widgets import DateTimeWidget
 
 __author__ = 'nick'
 from django import forms
-from .models import Profile, VideoCall, VCkit, ApiUse
+from .models import Profile, VideoCall, VCkit, ApiUse, VCversion, Rmxrules
 
 
 class ProfileForm(forms.ModelForm):
@@ -49,10 +49,18 @@ class ProfileKitForm(forms.ModelForm):
 
 class ApiUseForm(forms.ModelForm):
 
-
     class Meta:
         model = ApiUse
         fields = ('MCU_ip', 'DMA_ip', 'RM_ip')
 
+class VersionForm(forms.ModelForm):
 
+    class Meta:
+        model = VCversion
+        fields = ('VSX_version', 'HDX_version', 'GROUP_version')
 
+class RmxrulesForms(forms.ModelForm):
+
+    class Meta:
+        model = Rmxrules
+        fields = ('matkal', 'tzameret_a', 'tzameret_a_redundant', 'tzameret_b')

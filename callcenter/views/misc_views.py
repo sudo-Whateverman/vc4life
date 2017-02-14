@@ -1,6 +1,6 @@
 from callcenter.check_by_ip_interface import check
-from callcenter.forms import ApiUseForm
-from callcenter.models import ApiUse
+from callcenter.forms import ApiUseForm, VersionForm, RmxrulesForms
+from callcenter.models import ApiUse, VCversion, Rmxrules
 from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import PasswordResetForm, PasswordChangeForm
@@ -59,4 +59,26 @@ def apiuse_view(request):
             return redirect('/')
     else:
         form = ApiUseForm(instance=obj)
+    return render(request, 'apiuse.html', {'form': form})
+
+def version(request):
+    obj = VCversion.objects.first()
+    if request.method == 'POST':
+        form = VersionForm(request.POST, instance=obj)
+        if form.is_valid():
+            form.save()
+            return redirect('/')
+    else:
+        form = VersionForm(instance=obj)
+    return render(request, 'apiuse.html', {'form': form})
+
+def rmxrules(request):
+    obj = Rmxrules.objects.first()
+    if request.method == 'POST':
+        form = RmxrulesForms(request.POST, instance=obj)
+        if form.is_valid():
+            form.save()
+            return redirect('/')
+    else:
+        form = RmxrulesForms(instance=obj)
     return render(request, 'apiuse.html', {'form': form})
