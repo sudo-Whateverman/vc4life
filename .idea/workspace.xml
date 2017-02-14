@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="861653bf-9bb3-4969-97fb-59748e2472c1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vc4life/static/css/amitstyle.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/callcenter/templates/videoprob.html" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/callcenter/migrations/0001_initial.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/admin.py" afterPath="$PROJECT_DIR$/callcenter/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/views/misc_views.py" afterPath="$PROJECT_DIR$/callcenter/views/misc_views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/models.py" afterPath="$PROJECT_DIR$/callcenter/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vc4life/settings.py" afterPath="$PROJECT_DIR$/vc4life/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/urls.py" afterPath="$PROJECT_DIR$/callcenter/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vc4life.iws" />
@@ -47,10 +40,54 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/callcenter/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.457478">
-              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.31671554">
+              <caret line="50" column="69" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
               <folding>
                 <element signature="e#27#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="videoconference_views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/callcenter/views/videoconference_views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="status_views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/callcenter/views/status_views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/callcenter/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="84" selection-start-line="39" selection-start-column="84" selection-end-line="39" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile_views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/callcenter/views/profile_views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#56#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,12 +162,10 @@
         <option value="$PROJECT_DIR$/vc4life/static/css/login.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/callcenter/templates/simple_list.py" />
-        <option value="$PROJECT_DIR$/callcenter/forms.py" />
         <option value="$PROJECT_DIR$/callcenter/templates/status_new.html" />
         <option value="$PROJECT_DIR$/vc4life/static/css/style.css" />
         <option value="$PROJECT_DIR$/callcenter/templates/base.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/status.html" />
-        <option value="$PROJECT_DIR$/callcenter/views/status_views.py" />
         <option value="$PROJECT_DIR$/callcenter/templates/simple_list.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/index.html" />
         <option value="$PROJECT_DIR$/vc4life/static/css/table_django2.css" />
@@ -142,6 +177,8 @@
         <option value="$PROJECT_DIR$/callcenter/urls.py" />
         <option value="$PROJECT_DIR$/vc4life/settings.py" />
         <option value="$PROJECT_DIR$/callcenter/admin.py" />
+        <option value="$PROJECT_DIR$/callcenter/views/status_views.py" />
+        <option value="$PROJECT_DIR$/callcenter/forms.py" />
         <option value="$PROJECT_DIR$/callcenter/models.py" />
       </list>
     </option>
@@ -448,18 +485,6 @@
       <option name="number" value="Default" />
       <updated>1486757105523</updated>
     </task>
-    <task id="LOCAL-00009" summary="-- lets try to make the models appear in the admin box">
-      <created>1486812041721</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1486812041721</updated>
-    </task>
-    <task id="LOCAL-00010" summary="-- lets try to make the models appear in the admin box">
-      <created>1486812266230</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1486812266230</updated>
-    </task>
     <task id="LOCAL-00011" summary="-- created admin panel to create new profiles and new vcs">
       <created>1486814373675</created>
       <option name="number" value="00011" />
@@ -742,7 +767,19 @@
       <option name="project" value="LOCAL" />
       <updated>1487098235114</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="-- commit migrations">
+      <created>1487102002780</created>
+      <option name="number" value="00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1487102002781</updated>
+    </task>
+    <task id="LOCAL-00059" summary="-- added somewhat workable filter">
+      <created>1487104296441</created>
+      <option name="number" value="00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1487104296441</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -795,7 +832,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="-- made a test page" />
     <MESSAGE value="-- ported all functions to bootstrap&#10;-- fixed vc creation bug. now it works. &#10;" />
     <MESSAGE value="-- added approve calls tab" />
     <MESSAGE value="-- added change pass mockup because i'm not rolling out a mail server for this" />
@@ -820,7 +856,8 @@
     <MESSAGE value="-- fixed a button" />
     <MESSAGE value="-- the id is now 6 digit" />
     <MESSAGE value="-- commit migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- commit migrations" />
+    <MESSAGE value="-- added somewhat workable filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- added somewhat workable filter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1005,16 +1042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/callcenter/views/profile_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/callcenter/views/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07114624">
@@ -1065,29 +1092,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/callcenter/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vc4life/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/callcenter/views/status_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1111,14 +1120,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.333333">
           <caret line="27" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/callcenter/views/videoconference_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.102639295">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1221,10 +1222,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/callcenter/views/videoconference_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callcenter/views/profile_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callcenter/views/status_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callcenter/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="84" selection-start-line="39" selection-start-column="84" selection-end-line="39" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/callcenter/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.457478">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.31671554">
+          <caret line="50" column="69" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
           <folding>
             <element signature="e#27#38#0" expanded="true" />
           </folding>

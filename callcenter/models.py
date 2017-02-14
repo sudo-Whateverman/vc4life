@@ -27,7 +27,7 @@ class VCkit(models.Model):
         ('DeepOp', 'העומק')
     )
     pikud = models.CharField(max_length=30, choices=pikudim)
-    location = models.OneToOneField(Location, blank=True)
+    location = models.OneToOneField(Location, blank=True, null=True,)
 
     def __str__(self):
         return self.ip
@@ -48,7 +48,7 @@ class Profile(models.Model):
     created_date = models.DateTimeField(
         default=timezone.now)
     vckits = models.ManyToManyField(VCkit, blank=True)
-    location = models.OneToOneField(Location, default=True)
+    location = models.OneToOneField(Location, blank=True, null=True,)
 
     def __str__(self):
         return self.title
