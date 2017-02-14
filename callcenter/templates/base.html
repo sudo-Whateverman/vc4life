@@ -34,8 +34,8 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Confrence<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="/vc_create/">Add Confrence request</a></li>
-								<li><a href="/status/">My Approved calls</a></li>
-								<li><a href="/status/approved/">My VC schedule</a></li>
+								<li><a href="/status/approved/">My Approved calls</a></li>
+								<li><a href="/status/pending/">My Pending calls</a></li>
 								{% if request.user.is_superuser %}
 								<li><a href="/admin/callcenter/videocall/">Approve calls</a></li>
 								{% endif %}

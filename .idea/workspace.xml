@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="861653bf-9bb3-4969-97fb-59748e2472c1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vc4life/static/css/login.css" afterPath="$PROJECT_DIR$/vc4life/static/css/login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/templates/base.html" afterPath="$PROJECT_DIR$/callcenter/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/templates/status.html" afterPath="$PROJECT_DIR$/callcenter/templates/status.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/urls.py" afterPath="$PROJECT_DIR$/callcenter/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vc4life.iws" />
@@ -24,6 +26,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/callcenter/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/callcenter/models.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -46,11 +58,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/callcenter/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33174226">
+              <caret line="37" column="79" selection-start-line="37" selection-start-column="79" selection-end-line="37" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vc4life/static/css/login.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.83613443">
+            <state vertical-scroll-proportion="-25.866667">
               <caret line="100" column="27" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="status.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/callcenter/templates/status.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.0">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="status_views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/callcenter/views/status_views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -94,9 +136,7 @@
         <option value="$PROJECT_DIR$/callcenter/templates/vc_create.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/troubleshoot.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/statusphys.html" />
-        <option value="$PROJECT_DIR$/callcenter/templates/status.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/about.html" />
-        <option value="$PROJECT_DIR$/callcenter/views/status_views.py" />
         <option value="$PROJECT_DIR$/callcenter/views/videoconference_views.py" />
         <option value="$PROJECT_DIR$/callcenter/templates/passwordreset.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/registration/change_password.html" />
@@ -107,14 +147,16 @@
         <option value="$PROJECT_DIR$/callcenter/admin.py" />
         <option value="$PROJECT_DIR$/callcenter/views/profile_views.py" />
         <option value="$PROJECT_DIR$/callcenter/templates/version.html" />
-        <option value="$PROJECT_DIR$/callcenter/urls.py" />
         <option value="$PROJECT_DIR$/callcenter/models.py" />
         <option value="$PROJECT_DIR$/callcenter/templates/problems.html" />
         <option value="$PROJECT_DIR$/callcenter/views/misc_views.py" />
-        <option value="$PROJECT_DIR$/callcenter/templates/base.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/callcenter/forms.py" />
         <option value="$PROJECT_DIR$/vc4life/static/css/login.css" />
+        <option value="$PROJECT_DIR$/callcenter/templates/status.html" />
+        <option value="$PROJECT_DIR$/callcenter/views/status_views.py" />
+        <option value="$PROJECT_DIR$/callcenter/urls.py" />
+        <option value="$PROJECT_DIR$/callcenter/templates/base.html" />
       </list>
     </option>
   </component>
@@ -722,7 +764,13 @@
       <option name="project" value="LOCAL" />
       <updated>1487083528420</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="-- login changed into something &#10;-- fixed conference">
+      <created>1487086503427</created>
+      <option name="number" value="00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1487086503427</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -987,13 +1035,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/callcenter/templates/status.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.037037">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/callcenter/templates/statusphys.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.6666667">
@@ -1094,14 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/callcenter/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/callcenter/views/profile_views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1128,26 +1161,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/callcenter/views/status_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0158103">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/callcenter/views/misc_views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.8458498">
           <caret line="89" column="57" selection-start-line="89" selection-start-column="57" selection-end-line="89" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/callcenter/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7740384">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1198,8 +1215,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vc4life/static/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83613443">
+        <state vertical-scroll-proportion="-25.866667">
           <caret line="100" column="27" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callcenter/templates/status.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callcenter/views/status_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callcenter/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callcenter/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33174226">
+          <caret line="37" column="79" selection-start-line="37" selection-start-column="79" selection-end-line="37" selection-end-column="79" />
           <folding />
         </state>
       </provider>
