@@ -21,10 +21,12 @@ class VCallForm(forms.ModelForm):
         }
         fields = (
             'starting_time',
+            'ending_time',
             'participants',
             )
         widgets ={
             'starting_time': DateTimeWidget(bootstrap_version=2, usel10n=True),
+            'ending_time': DateTimeWidget(bootstrap_version=2, usel10n=True),
         }
 
     def __init__(self, *args, **kwargs):
