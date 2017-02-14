@@ -12,9 +12,9 @@ urlpatterns = [
     url(r'^logout/$', auth_views.logout, name='logout'),
     url(r'^about/$', views.about_page, name='about'),
     url(r'^editprofile/$', views.editprofile_view, name='editprofile'),  # add redirect to own profile
-    url(r'^status/pending/$', views.status_view, name='pending'),
-    url(r'^status/approved/$', views.status_view_approved, name='approved'),
-    url(r'^status/rejected/$', views.status_view_rejected, name='rejected'),
+    url(r'^status/pending/$', views.simple_list, {'status': 'P'}, name='pending'),
+    url(r'^status/approved/$', views.simple_list, {'status': 'A'}, name='approved'),
+    url(r'^status/rejected/$', views.simple_list, {'status': 'R'}, name='rejected'),
     url(r'^status/physical/$', views.status_view_physical, name='physical'),
     ## TODO: somehow get the ip to check status from
     url(r'^vc_create/$', views.create_vc, name='vc_create'),
