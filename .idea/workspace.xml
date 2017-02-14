@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="861653bf-9bb3-4969-97fb-59748e2472c1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/callcenter/templates/troubleshoot/setup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/templates/base.html" afterPath="$PROJECT_DIR$/callcenter/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/views/misc_views.py" afterPath="$PROJECT_DIR$/callcenter/views/misc_views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/urls.py" afterPath="$PROJECT_DIR$/callcenter/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/templates/troubleshoot/setup.html" afterPath="$PROJECT_DIR$/callcenter/templates/troubleshoot/setup.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vc4life.iws" />
@@ -61,11 +58,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/callcenter/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42675158">
+            <state vertical-scroll-proportion="-2.3508773">
               <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cameraprob.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/callcenter/templates/troubleshoot/cameraprob.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.0333333">
+              <caret line="30" column="77" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/callcenter/templates/troubleshoot/setup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.52112675">
+              <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -134,10 +151,10 @@
         <option value="$PROJECT_DIR$/callcenter/templates/troubleshoot/videoprob.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/troubleshoot/networkprob.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/troubleshoot/cameraprob.html" />
-        <option value="$PROJECT_DIR$/callcenter/templates/troubleshoot/setup.html" />
         <option value="$PROJECT_DIR$/callcenter/urls.py" />
         <option value="$PROJECT_DIR$/callcenter/views/misc_views.py" />
         <option value="$PROJECT_DIR$/callcenter/templates/base.html" />
+        <option value="$PROJECT_DIR$/callcenter/templates/troubleshoot/setup.html" />
       </list>
     </option>
   </component>
@@ -325,6 +342,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="troubleshoot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vc4life" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vc4life" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="callcenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="registration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vc4life" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vc4life" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="callcenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -482,12 +543,6 @@
       <created>1486757105523</created>
       <option name="number" value="Default" />
       <updated>1486757105523</updated>
-    </task>
-    <task id="LOCAL-00018" summary="-- added a problem view (for whatever stuff breaks)">
-      <created>1486900272470</created>
-      <option name="number" value="00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1486900272470</updated>
     </task>
     <task id="LOCAL-00019" summary="-- changed the 'pk' thingy to deploy from zero">
       <created>1486901833204</created>
@@ -777,7 +832,13 @@
       <option name="project" value="LOCAL" />
       <updated>1487112226447</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="-- setup added">
+      <created>1487114168259</created>
+      <option name="number" value="00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1487114168259</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -830,7 +891,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="-- added change pass real deal" />
     <MESSAGE value="-- extended user addition to include automatic profile" />
     <MESSAGE value="-- some changes don't care anymore" />
     <MESSAGE value="-- added rmx version and api" />
@@ -855,7 +915,8 @@
     <MESSAGE value="-- fix that shit" />
     <MESSAGE value="-- add troubleshooting" />
     <MESSAGE value="-- fixed the arrow" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- fixed the arrow" />
+    <MESSAGE value="-- setup added" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- setup added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1227,22 +1288,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/callcenter/templates/troubleshoot/cameraprob.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.556338">
-          <caret line="41" column="14" selection-start-line="41" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/callcenter/templates/troubleshoot/setup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.1210191">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/callcenter/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1273,8 +1318,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/callcenter/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42675158">
+        <state vertical-scroll-proportion="-2.3508773">
           <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callcenter/templates/troubleshoot/cameraprob.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0333333">
+          <caret line="30" column="77" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callcenter/templates/troubleshoot/setup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52112675">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
           <folding />
         </state>
       </provider>
