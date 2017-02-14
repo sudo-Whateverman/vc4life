@@ -32,6 +32,8 @@ urlpatterns = [
     url(r'^troubleshoot/networkprob/$', views.troubleshoot, {'problem': 'web'}, name='troubleshoot'),
     url(r'^troubleshoot/cameraprob/$', views.troubleshoot, {'problem': 'camera'}, name='troubleshoot'),
     url(r'^troubleshoot/videoprob/$', views.troubleshoot, {'problem': 'video'}, name='troubleshoot'),
+    url(r'^troubleshoot/setup/$', views.troubleshoot, {'problem': 'setup'}, name='troubleshoot'),
+
 
 
 ]

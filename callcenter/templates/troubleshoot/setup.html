@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+	  {% block extrahead %}
+    	<link rel="stylesheet" type="text/css" href="/static/css/amitstyle.css">
+	 {% endblock %}
+
+
+{% block content %}
+
+		<div class="page-header">
+		<h1>How to fix sound problams<br><small>a self help bot</small></h1>
+	</div>
+	<div id="in">
+		
+	</div>
+	<script type="text/javascript">
+		obj = {"q": [{"sv": "הדלקת הערכה","s": "1"},{"sv": "בחירת שפה","s": "2"},{"sv": "system name, h323.name, host name -הגדרת שם לערכה בשלושה מיקומים","s": "3"},{"sv": "system - admin settings - lan propertiesנמצא ב ip address,default gateway,subnet mask - הגדרת כתובות ","s ": "4 "},{"sv ": "system - admin settings - lan propertiesהגדרת די.אן.אס נמצא ב ","s ": "5 "},{"sv ": "SYSTEM - ADMIN SETTINGS - IP NETWORK נמצא GATEKEEPER הגדרת ","s ": "6 "},{"sv ": "בצע שיחת בדיקה ","s ": "7 "}]};
+    				var x = "<div class='well'>"+obj.q[0].sv+"</div>";
+    				x = x + "<div class='list-group'>";
+    				x = x + "<a href='#' class='list-group-item' onclick='loadLevel("+obj.q[0].s+")'>"+"הבא"+"</a>"
+    				x = x + "</div>";
+    				document.getElementById("in").innerHTML = x;
+		function loadLevel(step){
+			obj = {"q": [{"sv": "הדלקת הערכה","s": "1"},{"sv": "בחירת שפה","s": "2"},{"sv": "system name, h323.name, host name -הגדרת שם לערכה בשלושה מיקומים","s": "3"},{"sv": "system - admin settings - lan propertiesנמצא ב ip address,default gateway,subnet mask - הגדרת כתובות ","s": "4 "},{"sv": "system - admin settings - lan propertiesהגדרת די.אן.אס נמצא ב ","s": "5"},{"sv": "SYSTEM - ADMIN SETTINGS - IP NETWORK נמצא GATEKEEPER הגדרת ","s": "6 "},{"sv": "בצע שיחת בדיקה ","s ": "7 "}]};
+			var x = document.getElementById("in").innerHTML;
+			x = x + "<p class='arrow_exp'><img src='/images/oliver.png' width='30px'/></p>";
+			x = x + "<div class='well'>"+obj.q[step].sv+"</div>";
+			if (typeof obj.q[step+1] != "undefined") {
+    		x = x + "<div class='list-group'>";
+    		var step = step + 1;
+    		x = x + "<a href='#' class='list-group-item' onclick='loadLevel("+step+")'>"+"הבא"+"</a>"
+    		x = x + "</div>";
+    		}
+    		document.getElementById("in").innerHTML = x;
+		}
+	</script>
+{% endblock %}

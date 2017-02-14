@@ -96,5 +96,7 @@ def troubleshoot(request, problem):
         return render(request, 'troubleshoot/networkprob.html')
     elif problem == 'camera':
         return render(request, 'troubleshoot/cameraprob.html')
+    elif problem == 'setup':
+        return render(request, 'troubleshoot/setup.html')
     else:
         return render(request, 'troubleshoot.html')
