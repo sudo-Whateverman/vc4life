@@ -4,6 +4,21 @@ from django.db import models
 from django.utils import timezone
 
 
+class VCkit(models.Model):
+    name_of_kit = models.CharField(max_length=30)
+    ip = models.GenericIPAddressField()
+    pikudim = (
+        ('North', 'צפון'),
+        ('Center', 'מרכז'),
+        ('South', 'דרום'),
+        ('Homefront', 'העורף'),
+        ('DeepOp', 'העומק')
+    )
+    pikud = models.CharField(max_length=30, choices=pikudim)
+
+    def __str__(self):
+        return self.ip
+
 class Profile(models.Model):
     levels_field = (
         ('major', 'רב סרן'),
@@ -22,14 +37,16 @@ class Profile(models.Model):
         ('Homefront', 'העורף'),
         ('DeepOp', 'העומק')
     )
+    pikud = models.CharField(max_length=30, choices=pikudim)
     levels_field_iter = tuple(levels_field)
     profile = models.OneToOneField('auth.User', unique=True)
     title = models.CharField(max_length=60)
     name = models.CharField(max_length=60)
+    id_number = models.CharField(max_length=20, unique=True)
     level = models.CharField(max_length=30, choices=levels_field_iter)
     created_date = models.DateTimeField(
         default=timezone.now)
-    pikud = models.CharField(max_length=30, choices=pikudim)
+    vckits = models.ManyToManyField(VCkit, blank=True)
 
     def __str__(self):
         return self.title
@@ -46,6 +63,7 @@ class VideoCall(models.Model):
     VC_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False, unique=True)
     request_time = models.DateTimeField(default=timezone.now)
     starting_time = models.DateTimeField(default=timezone.now)
+    ending_time = models.DateTimeField(default=timezone.now)
     participants = models.ManyToManyField(Profile, default=None, related_name='participants')
     vc_head = models.ForeignKey(Profile, default=None, related_name='vc_head')  # use request.user to get currently logged user.
     # add more conversation properties
@@ -65,3 +83,10 @@ class VCallcenter(models.Model):
         ('DNR', 'Does Not Respond')
     )
     status = models.CharField(choices=status_field, max_length=30)
+
+
+class ApiUse(models.Model):
+    MCU_ip = models.GenericIPAddressField()
+    DMA_ip = models.GenericIPAddressField()
+    RM_ip = models.GenericIPAddressField()
+

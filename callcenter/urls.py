@@ -22,4 +22,6 @@ urlpatterns = [
     url(r'^troubleshoot/$', views.troubleshoot, name='troubleshoot'),
     url(r'^test/$', views.test, name='test'),
     url(r'^password_reset/$', views.change_password, name='reset'),
+    url(r'^kitsync/$', views.editkits_view, name='kitsync'),
+    url(r'^api/$', views.apiuse_view, name='apiuse'),
 ]

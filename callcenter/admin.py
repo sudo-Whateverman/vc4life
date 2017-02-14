@@ -8,6 +8,8 @@ from .models import Profile
 admin.site.register(callcenter.models.VideoCall)
 admin.site.register(callcenter.models.Profile)
 admin.site.register(callcenter.models.VCallcenter)
+admin.site.register(callcenter.models.VCkit)
+#admin.site.register(callcenter.models.ApiUse)
 
 
 
