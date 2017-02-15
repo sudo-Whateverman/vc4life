@@ -51,8 +51,6 @@
 		<!-- HERE -->
 		{% else %}
 	    <!-- THERE {{ participants }} -->
-	    var s = ""+"<option value='{{ participants.ip }}'>{{ participants.name_of_kit }}</option>"+"";
-
 		var s = ""+{% for participant in participants %}"<option value='{{ participant.ip }}'>{{ participant.name_of_kit }}</option>"+{% endfor %}"";
 		{% endif %}
 		var x = s + "<option value='auto'>auto</option><option value='none'>none</option>";

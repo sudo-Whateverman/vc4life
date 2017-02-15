@@ -50,4 +50,4 @@ def manage_calls(request):
 def manage_calls_by_id(request, VC_id):
     obj = VideoCall.objects.get(VC_id=VC_id)
     participants = obj.participants.all()
-    return render(request, 'managebyid.html', {'obj': obj}, {'participants': participants})
+    return render(request, 'managebyid.html', {'obj': obj, 'participants': participants})
