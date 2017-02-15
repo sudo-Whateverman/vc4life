@@ -39,7 +39,8 @@ class VCallForm(forms.ModelForm):
         self.fields["participants"].widget = forms.widgets.CheckboxSelectMultiple()
         self.fields["participants"].help_text = "The people you want to talk to"
         for lo in self.locations:
-            self.fields["participants"].queryset = self.fields["participants"].queryset | VCkit.objects.filter(pikud=pikud_form, location=lo) # TODO: here we need to add our  fancy filter
+             self.kits = self.kits | VCkit.objects.filter(pikud=pikud_form, location=lo) # TODO: here we need to add our  fancy filter
+        self.fields["participants"].queryset = self.kits
 
 class ProfileKitForm(forms.ModelForm):
 

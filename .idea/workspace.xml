@@ -39,8 +39,8 @@
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/callcenter/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.60902256">
-              <caret line="41" column="141" selection-start-line="41" selection-start-column="141" selection-end-line="41" selection-end-column="141" />
+            <state vertical-scroll-proportion="0.6766917">
+              <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -498,12 +498,6 @@
       <option name="number" value="Default" />
       <updated>1486757105523</updated>
     </task>
-    <task id="LOCAL-00027" summary="-- made a test page">
-      <created>1486926932064</created>
-      <option name="number" value="00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1486926932064</updated>
-    </task>
     <task id="LOCAL-00028" summary="-- ported all functions to bootstrap&#10;-- fixed vc creation bug. now it works. &#10;">
       <created>1486934635445</created>
       <option name="number" value="00028" />
@@ -792,7 +786,13 @@
       <option name="project" value="LOCAL" />
       <updated>1487118190915</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="-- vc_create fail is fixed fixed fixed fixed fixed">
+      <created>1487118437436</created>
+      <option name="number" value="00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1487118437436</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -845,7 +845,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="-- changed problem to be verbose" />
     <MESSAGE value="-- added login to everything" />
     <MESSAGE value="-- login changed into something &#10;-- fixed conference" />
     <MESSAGE value="-- some html bullshit" />
@@ -870,7 +869,8 @@
     <MESSAGE value="-- vc_create fail is fixed fixed" />
     <MESSAGE value="-- vc_create fail is fixed fixed fixed" />
     <MESSAGE value="-- vc_create fail is fixed fixed fixed fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- vc_create fail is fixed fixed fixed fixed" />
+    <MESSAGE value="-- vc_create fail is fixed fixed fixed fixed fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- vc_create fail is fixed fixed fixed fixed fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1281,8 +1281,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/callcenter/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60902256">
-          <caret line="41" column="141" selection-start-line="41" selection-start-column="141" selection-end-line="41" selection-end-column="141" />
+        <state vertical-scroll-proportion="0.6766917">
+          <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
           <folding />
         </state>
       </provider>
