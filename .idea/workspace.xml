@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="861653bf-9bb3-4969-97fb-59748e2472c1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/templates/base.html" afterPath="$PROJECT_DIR$/callcenter/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/templates/about.html" afterPath="$PROJECT_DIR$/callcenter/templates/about.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vc4life.iws" />
@@ -56,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/callcenter/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4924623">
-              <caret line="39" column="73" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
+            <state vertical-scroll-proportion="-1.0598291">
+              <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -70,7 +70,17 @@
         <entry file="file://$PROJECT_DIR$/callcenter/views/videoconference_views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="59" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="59" />
+              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/callcenter/templates/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9213974">
+              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -128,7 +138,6 @@
         <option value="$PROJECT_DIR$/callcenter/templates/vc_create.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/troubleshoot.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/statusphys.html" />
-        <option value="$PROJECT_DIR$/callcenter/templates/about.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/passwordreset.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/registration/change_password.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/change_password.html" />
@@ -166,8 +175,9 @@
         <option value="$PROJECT_DIR$/callcenter/urls.py" />
         <option value="$PROJECT_DIR$/callcenter/templates/manage.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/managebyid.html" />
-        <option value="$PROJECT_DIR$/callcenter/views/videoconference_views.py" />
         <option value="$PROJECT_DIR$/callcenter/templates/base.html" />
+        <option value="$PROJECT_DIR$/callcenter/views/videoconference_views.py" />
+        <option value="$PROJECT_DIR$/callcenter/templates/about.html" />
       </list>
     </option>
   </component>
@@ -535,12 +545,6 @@
       <option name="number" value="Default" />
       <updated>1486757105523</updated>
     </task>
-    <task id="LOCAL-00034" summary="-- added rmx version and api">
-      <created>1487078110051</created>
-      <option name="number" value="00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1487078110051</updated>
-    </task>
     <task id="LOCAL-00035" summary="-- added rmx version and api">
       <created>1487079977457</created>
       <option name="number" value="00035" />
@@ -829,7 +833,13 @@
       <option name="project" value="LOCAL" />
       <updated>1487128111051</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="-- commit manage button">
+      <created>1487128308596</created>
+      <option name="number" value="00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1487128308596</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -882,7 +892,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="-- added bootystrap" />
     <MESSAGE value="-- status test" />
     <MESSAGE value="-- test status" />
     <MESSAGE value="-- test status completed" />
@@ -907,7 +916,8 @@
     <MESSAGE value="-- vc_create fail is fixed fixed fixed fixed fixed fixed fixed fixed fixed" />
     <MESSAGE value="-- vc_create fail is fixed fixed fixed fixed fixed fixed fixed fixed fixed fixed" />
     <MESSAGE value="-- FIXED" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- FIXED" />
+    <MESSAGE value="-- commit manage button" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- commit manage button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1219,14 +1229,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/callcenter/templates/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6363636">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/callcenter/templates/status.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.740741">
@@ -1314,14 +1316,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/callcenter/views/videoconference_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="59" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/callcenter/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1332,8 +1326,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/callcenter/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4924623">
-          <caret line="39" column="73" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
+        <state vertical-scroll-proportion="-1.0598291">
+          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callcenter/views/videoconference_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callcenter/templates/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9213974">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
           <folding />
         </state>
       </provider>
