@@ -27,7 +27,10 @@ def create_vc(request):
         else:
             return redirect('/problems/')
     else:
-        form = VCallForm(pikud_form=obj.pikud, location_form=obj.location)
+        if obj.location is not None:
+            form = VCallForm(pikud_form=obj.pikud, location_form=obj.location)
+        else:
+            return redirect('/problems/')
         ## TODO: show only people the person can actually invite
         ## TODO: add line completion widget to names so typing would be fast
         return render(request, 'vc_create.html', {'form': form})
