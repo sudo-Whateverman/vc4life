@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if not table %}
+    <h1>NO ACTIVE CONVERSATIONS</h1>
+{% else %}
+<h1> Current Conversations</h1>
+    {% for call in calls %}
+        {% url 'manage_calls_by_id' VC_id=calls %}
+    {% endfor %}
+
+{% endif %}
+
+
+<a href="/status/pending/">Pending</a>
+<a href="/status/approved/">Approved</a>
+<a href="/status/rejected/">Rejected</a>
+{% endblock %}

@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+	  {% block extrahead %}
+    	<link rel="stylesheet" type="text/css" href="/static/css/amitstyle.css">
+	 {% endblock %}
+
+
+{% block content %}
+		<div class="page-header">
+		<h1>My VC<br><small>diagnostics</small></h1>
+		</div>
+		<div id="myDetails">
+
+		</div>
+		<script type="text/javascript">
+				ip = 'http://192.168.1.1';
+  				var xhttp = new XMLHttpRequest();
+  				xhttp.onreadystatechange = function() {
+    				if (this.readyState == 4 && this.status == 200) {
+    					var txt = "<table>";
+    					try{
+    						//this happens for VSX/HDX
+    						txt = txt + "<tr><th>";
+    						txt = txt + ip;
+    						txt = txt + "</th></tr>";
+    						txt = txt + "<tr><td>";
+      						xmlDoc = xmlhttp.responseXML;
+							x = xmlDoc.getElementsByTagName("MODEL");
+    						txt = txt + x[i].childNodes[0].nodeValue;
+    						txt = txt + "</td></tr>";
+    						txt = txt + "<tr><td>";
+      						xmlDoc = xmlhttp.responseXML;
+							x = xmlDoc.getElementsByTagName("SERIAL");
+    						txt = txt + x[i].childNodes[0].nodeValue;
+    						txt = txt + "</td></tr>";
+    						txt = txt + "<tr><td>";
+      						xmlDoc = xmlhttp.responseXML;
+							x = xmlDoc.getElementsByTagName("LANHOSTNAME");
+    						txt = txt + x[i].childNodes[0].nodeValue;
+    						txt = txt + "</td></tr>";
+    						txt = txt + "<tr><td>";
+      						xmlDoc = xmlhttp.responseXML;
+							x = xmlDoc.getElementsByTagName("GATEKEEPERSTATUS");
+    						txt = txt + x[i].childNodes[0].nodeValue;
+    						txt = txt + "</td></tr>";
+    						txt = txt + "<tr><td>";
+      						xmlDoc = xmlhttp.responseXML;
+							x = xmlDoc.getElementsByTagName("SERIAL");
+    						var v = x[i].childNodes[0].nodeValue;
+    						//if v == current version from backend print v else prind outdated
+    						txt = txt + "</td></tr>";
+    						
+						}
+						catch(err){
+							//this happens for groups
+							obj = JSON.parse(xmlhttp.responseXML);
+							txt = txt + "<tr><th>";
+    						txt = txt + ip;
+    						txt = txt + "</th></tr>";
+    						txt = txt + "<tr><td>";
+    						txt = txt + obj.model; 
+    						txt = txt + "</td></tr>";
+    						txt = txt + "<tr><td>";
+    						txt = txt + obj.serialNumber;
+    						txt = txt + "</td></tr>";
+    						txt = txt + "<tr><td>";
+    						txt = txt + obj.systemName;
+    						txt = txt + "</td></tr>";
+    						txt = txt + "<tr><td>";
+    						txt = txt + obj.rcBatteryCondition;
+    						txt = txt + "</td></tr>";
+						}
+						var txt = "</table>";
+						document.getElementById("myDetails").innerHTML = txt;
+    				}
+    				if (this.readyState == 4 && this.status != 200) {
+    					//this happens if there is no network
+    					document.getElementById("myDetails").innerHTML = "<div class='panel panel-warning'><div class='panel-body'>no network</div></div>";
+    				}
+				};
+				try{
+					//for
+					ip = ip + "/system.xml";
+					xhttp.open("GET",ip, true);
+					xhttp.send();
+				}
+				catch(err){
+					ip = ip + "/rest/system";
+					xhttp.open("GET",ip, true);
+					xhttp.send();
+				}	
+		</script>
+{% endblock %}

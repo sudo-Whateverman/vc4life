@@ -27,12 +27,16 @@ urlpatterns = [
     url(r'^version/$', views.version, name='version'),
     url(r'^rmxrules/$', views.rmxrules, name='rmxrules'),
     url(r'^test/$', views.test, name='test'),
-    url(r'^troubleshoot/$', views.troubleshoot, {'problem': 'general'}, name='troubleshoot'),
-    url(r'^troubleshoot/soundprob/$', views.troubleshoot, {'problem': 'sound'}, name='troubleshoot'),
-    url(r'^troubleshoot/networkprob/$', views.troubleshoot, {'problem': 'web'}, name='troubleshoot'),
-    url(r'^troubleshoot/cameraprob/$', views.troubleshoot, {'problem': 'camera'}, name='troubleshoot'),
-    url(r'^troubleshoot/videoprob/$', views.troubleshoot, {'problem': 'video'}, name='troubleshoot'),
-    url(r'^troubleshoot/setup/$', views.troubleshoot, {'problem': 'setup'}, name='troubleshoot'),
+    ## troubleshooting ##
+    url(r'^troubleshoot/diagnostics/$', views.troubleshoot, {'problem': 'diagnostics'}, name='diagnostics'),
+    url(r'^troubleshoot/soundprob/$', views.troubleshoot, {'problem': 'sound'}, name='sound'),
+    url(r'^troubleshoot/networkprob/$', views.troubleshoot, {'problem': 'web'}, name='web'),
+    url(r'^troubleshoot/cameraprob/$', views.troubleshoot, {'problem': 'camera'}, name='camera'),
+    url(r'^troubleshoot/videoprob/$', views.troubleshoot, {'problem': 'video'}, name='video'),
+    url(r'^troubleshoot/setup/$', views.troubleshoot, {'problem': 'setup'}, name='setup'),
+    ## end troubleshooting ##
+    url(r'^managecalls$', views.manage, name='manage_calls'),
+    url(r'^managecalls$/(?P<id>\d+)/$', views.manage_by_id , name='manage_calls_by_id'),
 
 
 

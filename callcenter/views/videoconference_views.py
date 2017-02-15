@@ -14,7 +14,7 @@ def create_vc(request):
     except ObjectDoesNotExist:
         return redirect('/problems/')
     if request.method == "POST":
-        form = VCallForm(data=request.POST)
+        form = VCallForm(data=request.POST, pikud_form=obj.pikud, location_form=obj.location)
         if form.is_valid():
             ## TODO : add check that people can be invited.
             vcall = form.save(commit=False)
@@ -34,3 +34,7 @@ def create_vc(request):
         ## TODO: show only people the person can actually invite
         ## TODO: add line completion widget to names so typing would be fast
         return render(request, 'vc_create.html', {'form': form})
+
+def manage_calls(request):
+    obj = VideoCall.objects.get(profile=request.user)
+    return render(request, 'vc_create.html', {'form': form})

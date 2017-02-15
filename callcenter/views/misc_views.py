@@ -98,5 +98,9 @@ def troubleshoot(request, problem):
         return render(request, 'troubleshoot/cameraprob.html')
     elif problem == 'setup':
         return render(request, 'troubleshoot/setup.html')
+    elif problem == 'diagnostics':
+        return render(request, 'troubleshoot/diagnostics.html')
     else:
-        return render(request, 'troubleshoot.html')
+        return render(request, 'troubleshoot/diagnostics.html')
+
+
