@@ -40,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/callcenter/forms.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.5413534">
-              <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+              <caret line="40" column="82" selection-start-line="40" selection-start-column="82" selection-end-line="40" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -498,12 +498,6 @@
       <option name="number" value="Default" />
       <updated>1486757105523</updated>
     </task>
-    <task id="LOCAL-00029" summary="-- added approve calls tab">
-      <created>1486935028660</created>
-      <option name="number" value="00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1486935028660</updated>
-    </task>
     <task id="LOCAL-00030" summary="-- added change pass mockup because i'm not rolling out a mail server for this">
       <created>1486935960882</created>
       <option name="number" value="00030" />
@@ -792,7 +786,13 @@
       <option name="project" value="LOCAL" />
       <updated>1487118741479</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="-- vc_create fail is fixed fixed fixed fixed fixed fixed fixed">
+      <created>1487118817235</created>
+      <option name="number" value="00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1487118817235</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -845,7 +845,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="-- login changed into something &#10;-- fixed conference" />
     <MESSAGE value="-- some html bullshit" />
     <MESSAGE value="-- did some fix" />
     <MESSAGE value="-- changed the gitignore" />
@@ -870,7 +869,8 @@
     <MESSAGE value="-- vc_create fail is fixed fixed fixed fixed" />
     <MESSAGE value="-- vc_create fail is fixed fixed fixed fixed fixed" />
     <MESSAGE value="-- vc_create fail is fixed fixed fixed fixed fixed fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- vc_create fail is fixed fixed fixed fixed fixed fixed" />
+    <MESSAGE value="-- vc_create fail is fixed fixed fixed fixed fixed fixed fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- vc_create fail is fixed fixed fixed fixed fixed fixed fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1282,7 +1282,7 @@
     <entry file="file://$PROJECT_DIR$/callcenter/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5413534">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+          <caret line="40" column="82" selection-start-line="40" selection-start-column="82" selection-end-line="40" selection-end-column="82" />
           <folding />
         </state>
       </provider>

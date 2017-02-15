@@ -35,10 +35,10 @@ class VCallForm(forms.ModelForm):
 
     def __init__(self, pikud_form=None, location_form=None, *args, **kwargs):
         super(VCallForm, self).__init__(*args, **kwargs)
-        self.locations = Location.objects.get(name=location_form).get_descendants(include_self=True)
+        self.locations = Location.objects.get(name=location_form).get_descendants(include_self=False)
         self.fields["participants"].widget = forms.widgets.CheckboxSelectMultiple()
         self.fields["participants"].help_text = "The people you want to talk to"
-        self.kits = None
+        self.kits = VCkit.objects.filter(pikud=pikud_form, location=location_form)
         for lo in self.locations:
              self.kits = self.kits | VCkit.objects.filter(pikud=pikud_form, location=lo) # TODO: here we need to add our  fancy filter
         self.fields["participants"].queryset = self.kits
