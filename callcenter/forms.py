@@ -2,7 +2,7 @@ from datetimewidget.widgets import DateTimeWidget
 
 __author__ = 'nick'
 from django import forms
-from .models import Profile, VideoCall, VCkit, ApiUse, VCversion, Rmxrules
+from .models import Profile, VideoCall, VCkit, ApiUse, VCversion, Rmxrules, Location
 import django_tables2 as tables
 
 class SimpleTableVideo(tables.Table):
@@ -33,12 +33,12 @@ class VCallForm(forms.ModelForm):
             'ending_time': DateTimeWidget(bootstrap_version=2, usel10n=True),
         }
 
-    def __init__(self, pikud_form=None,  *args, **kwargs):
+    def __init__(self, pikud_form=None, location_form=None, *args, **kwargs):
         super(VCallForm, self).__init__(*args, **kwargs)
+        self.locations = Location.get_descendants(name=location_form) | location_form
         self.fields["participants"].widget = forms.widgets.CheckboxSelectMultiple()
         self.fields["participants"].help_text = "The people you want to talk to"
-        self.fields["participants"].queryset = VCkit.objects.filter(pikud=pikud_form)  # TODO: here we need to add our  fancy filter
-
+        self.fields["participants"].queryset = VCkit.objects.filter(pikud=pikud_form, location=self.locations)  # TODO: here we need to add our  fancy filter
 
 class ProfileKitForm(forms.ModelForm):
 
