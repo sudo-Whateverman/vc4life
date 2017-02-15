@@ -35,8 +35,8 @@ urlpatterns = [
     url(r'^troubleshoot/videoprob/$', views.troubleshoot, {'problem': 'video'}, name='video'),
     url(r'^troubleshoot/setup/$', views.troubleshoot, {'problem': 'setup'}, name='setup'),
     ## end troubleshooting ##
-    url(r'^managecalls$', views.manage, name='manage_calls'),
-    url(r'^managecalls$/(?P<id>\d+)/$', views.manage_by_id , name='manage_calls_by_id'),
+    url(r'^managecalls/$', views.manage_calls, name='manage_calls'),
+    url(r'^manage_calls_by_id/(?P<VC_id>\d+)$', views.manage_calls_by_id, name='manage_calls_by_id'),
 
 
 

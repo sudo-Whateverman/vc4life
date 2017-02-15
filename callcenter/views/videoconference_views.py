@@ -1,5 +1,5 @@
 from callcenter.forms import VCallForm
-from callcenter.models import Profile
+from callcenter.models import Profile, VideoCall, VCkit
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ObjectDoesNotExist
 from django.shortcuts import redirect, render
@@ -20,7 +20,7 @@ def create_vc(request):
             vcall = form.save(commit=False)
             vcall.vc_head = obj
             vcall.request_time = timezone.now()
-            vcall.VC_id = str(vcall.VC_id.int)[0:7]
+            #vcall.VC_id = str(vcall.VC_id.int)[0:7]
             vcall.save()
             form.save_m2m()
             return redirect('/')
@@ -36,5 +36,18 @@ def create_vc(request):
         return render(request, 'vc_create.html', {'form': form})
 
 def manage_calls(request):
-    obj = VideoCall.objects.get(profile=request.user)
-    return render(request, 'vc_create.html', {'form': form})
+    try:
+        obj = Profile.objects.get(profile=request.user)
+    except ObjectDoesNotExist:
+        return redirect('/problems/')
+    calls = VideoCall.objects.filter(vc_head=obj)
+    # form_calls = list()
+    # for call in calls:
+    #     if call.starting_time > timezone.now() and call.ending_time < timezone.now():
+    #         form_calls.append(call)
+    return render(request, 'manage.html', {'calls': calls})
+
+def manage_calls_by_id(request, VC_id):
+    obj = VideoCall.objects.get(VC_id=VC_id)
+    participants = obj.participants.all()
+    return render(request, 'managebyid.html', {'obj': obj}, {'participants': participants})

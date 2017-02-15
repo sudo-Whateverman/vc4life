@@ -1,0 +1,122 @@
+.parent {
+    padding:10px;
+    align-self:center;
+    align-content:center;
+    position: center;
+    width: 100%;
+    height:100px;
+    margin: auto;
+}
+
+
+.one {
+    border:thick;
+    margin: auto;
+    outline:double;
+    height: 100%;
+    width: 50%;
+    position: center;
+     margin: auto;
+    
+}
+
+.two{
+    border:thick;
+
+    outline:double;
+    height: 50%;
+    width: 50%;
+    position: center;
+     margin: auto;
+}
+.three{
+    border:thick;
+    outline:double;
+    height: 50%;
+    width: 50%;
+    position: center;
+    margin: auto;
+}
+.threeFloat{
+    display:inline-block;
+    border:thick;
+    outline:double;
+    height: 50%;
+    width: 24.9%;
+    position: center;
+    margin: auto;
+}
+.selectOne{
+    width:100%;
+}
+section{
+    text-align:center;
+    height:100%;
+}
+.fourFloat{
+    display:inline-block;
+    border:thick;
+    outline:double;
+    height: 50%;
+    width: 16.53%;
+    position: center;
+    margin: auto;
+}
+.four2Float
+{
+    display:inline-block;
+    border:thick;
+    outline:double;
+    height: 50%;
+    width: 33.3%;
+    position: center;
+    margin: auto;
+}
+.sectionFour{
+    text-align:center;
+    height:100%;
+    width:75%;
+    margin:auto;
+}
+.parentFour {
+    float:left;
+   
+    width: 50%;
+    height:100px;
+   
+}
+
+th, td {
+    border: double;
+}
+table {
+    border-collapse: separate;
+    empty-cells: hide;
+    border: 1px solid black;
+    width:50%;
+    margin-right:auto;
+    margin-left:auto;
+}
+.five {
+    border:thick;
+    margin: auto;
+    outline:double;
+    
+    width: 100%;
+    position: center;
+     margin: auto;
+    
+}
+.selectFive
+{
+  
+    width:100%;
+}
+td{
+    vertical-align:top;
+}
+.table4, .table10
+{
+   width:49%;
+   
+}

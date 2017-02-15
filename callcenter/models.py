@@ -53,8 +53,12 @@ class Profile(models.Model):
     def __str__(self):
         return self.title
 
+def a_hack():
+    num = uuid.uuid4()
+    return str(num.int)[0:7]
 
 class VideoCall(models.Model):
+
     status_field = (
         ('P', 'Pending'),
         ('A', 'Approved'),
@@ -62,7 +66,7 @@ class VideoCall(models.Model):
         ('C', 'Completed'),
     )
     status = models.CharField(choices=status_field, default='P', max_length=20)
-    VC_id = models.CharField(primary_key=True, default=uuid.uuid4, editable=False, unique=True, max_length=10)
+    VC_id = models.CharField(primary_key=True, default=a_hack, editable=False, unique=True, max_length=10)
     request_time = models.DateTimeField(default=timezone.now)
     starting_time = models.DateTimeField(default=timezone.now)
     ending_time = models.DateTimeField(default=timezone.now)

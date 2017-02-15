@@ -1,0 +1,213 @@
+{% extends 'base.html' %}
+
+	  {% block extrahead %}
+    	<link rel="stylesheet" type="text/css" href="/static/css/amitstyle.css">
+    	<link rel="stylesheet" type="text/css" href="/static/css/partic.css">
+	 {% endblock %}
+
+
+{% block content %}
+	<div class="page-header">
+		<h1>My confrence</h1>
+	</div>
+	<div class="container-fluid">
+		<div class="row" style="height: 300px">
+			<div class="col-lg-3">
+				<select width='100%' size='10' style='width: 100%' id='partop'>
+				</select>
+			</div>
+			<div class="col-lg-9">
+				<nav>
+					<ul class="nav nav-tabs">
+						<li role="presentation" id="ff1"><a href="#" id="f1">1</a></li>
+						<li role="presentation" id="ff2"><a href="#" id="f2">2</a></li>
+						<li role="presentation" id="ff3"><a href="#" id="f3">3</a></li>
+						<li role="presentation" id="ff4"><a href="#" id="f4">4</a></li>
+						<li role="presentation" id="ff5"><a href="#" id="f5">5</a></li>
+						<li role="presentation" id="ff6"><a href="#" id="f6">6</a></li>
+						<li role="presentation" id="ff7"><a href="#" id="f7f8">7-8</a></li>
+						<li role="presentation" id="ff9"><a href="#" id="f9">9</a></li>
+						<li role="presentation" id="ff10"><a href="#" id="f10">10+</a></li>
+					</ul>
+				</nav>
+				<div id="in">
+					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-1"><button type="button" class="btn btn-default btn-md" id="mute">mute</button></div>
+			<div class="col-xs-2"><button type="button" class="btn btn-default btn-md"  id="volumedown">volume-</button></div>
+			<div class="col-xs-2"><button type="button" class="btn btn-default btn-md"  id="volumeup">volume+</button></div>
+			<div class="col-xs-2"><button type="button" class="btn btn-default btn-md" id="camblock">Camera block</button></div>
+			<div class="col-xs-2"><button type="button" class="btn btn-default btn-md"  id="camunblock">Camera unblock</button></div>
+			<div class="col-xs-1"><button type="button" class="btn btn-default btn-md" id="micmute">mute mic</button></div>
+			<div class="col-xs-1"><button type="button" class="btn btn-default btn-md" id="micunmute">unmute mic</button></div>
+		</div>		
+	</div>
+	<script type="text/javascript">
+		{% if not participants %}
+		var s = '';
+		<!-- HERE -->
+		{% else %}
+	    <!-- THERE {{ participants }} -->
+	    var s = ""+"<option value='{{ participants.ip }}'>{{ participants.name_of_kit }}</option>"+"";
+
+		var s = ""+{% for participant in participants %}"<option value='{{ participant.ip }}'>{{ participant.name_of_kit }}</option>"+{% endfor %}"";
+		{% endif %}
+		var x = s + "<option value='auto'>auto</option><option value='none'>none</option>";
+		var y = {{ obj.VC_id }};//con id
+		window.onload = function(){
+			$("#ff1").addClass("active");
+			$("#ff2").removeClass("active");
+			$("#ff3").removeClass("active");
+			$("#ff4").removeClass("active");
+			$("#ff5").removeClass("active");
+			$("#ff6").removeClass("active");
+			$("#ff7").removeClass("active");
+			$("#ff9").removeClass("active");
+			$("#ff10").removeClass("active");
+			document.getElementById("in").innerHTML = "<div class='parent'><div class='one'><select class='selectOne'>"+x+"</select></div>";
+			document.getElementById("partop").innerHTML = s;
+		}
+		document.getElementById('f1').onclick = function(){
+			$("#ff1").addClass("active");
+			$("#ff2").removeClass("active");
+			$("#ff3").removeClass("active");
+			$("#ff4").removeClass("active");
+			$("#ff5").removeClass("active");
+			$("#ff6").removeClass("active");
+			$("#ff7").removeClass("active");
+			$("#ff9").removeClass("active");
+			$("#ff10").removeClass("active");
+			document.getElementById("in").innerHTML = "<div class='parent'><div class='one'><select class='selectOne'>"+x+"</select></div>";
+		}
+		document.getElementById('f2').onclick = function(){
+			$("#ff1").removeClass("active");
+			$("#ff2").addClass("active");
+			$("#ff3").removeClass("active");
+			$("#ff4").removeClass("active");
+			$("#ff5").removeClass("active");
+			$("#ff6").removeClass("active");
+			$("#ff7").removeClass("active");
+			$("#ff9").removeClass("active");
+			$("#ff10").removeClass("active");
+			document.getElementById("in").innerHTML = "<div class='parent'><div class='two'><select class='selectOne'>"+x+"</select></div><div class='two'><select class='selectOne'>"+x+"</select></div></div>";
+		}
+		document.getElementById('f3').onclick = function(){
+			$("#ff1").removeClass("active");
+			$("#ff2").removeClass("active");
+			$("#ff3").addClass("active");
+			$("#ff4").removeClass("active");
+			$("#ff5").removeClass("active");
+			$("#ff6").removeClass("active");
+			$("#ff7").removeClass("active");
+			$("#ff9").removeClass("active");
+			$("#ff10").removeClass("active");
+			document.getElementById("in").innerHTML = "<div class='parent'><div class='three'><select class='selectOne'>"+x+"</select></div><section><div class='threeFloat'><select class='selectOne'>"+x+"</select></div><div class='threeFloat'><select class='selectOne'>"+x+"</select></div></section></div>";
+		}
+		document.getElementById('f4').onclick = function(){
+			$("#ff1").removeClass("active");
+			$("#ff2").removeClass("active");
+			$("#ff3").removeClass("active");
+			$("#ff4").addClass("active");
+			$("#ff5").removeClass("active");
+			$("#ff6").removeClass("active");
+			$("#ff7").removeClass("active");
+			$("#ff9").removeClass("active");
+			$("#ff10").removeClass("active");
+			document.getElementById("in").innerHTML = "<div> <table class='table4' style='float: left'> <tr> <td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr><tr> <td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr></table> <table class='table4' style='float: right'> <tr> <td colspan='3'> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr><tr> <td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr></table> </div>";
+		}
+		document.getElementById('f5').onclick = function(){
+			$("#ff1").removeClass("active");
+			$("#ff2").removeClass("active");
+			$("#ff3").removeClass("active");
+			$("#ff4").removeClass("active");
+			$("#ff5").addClass("active");
+			$("#ff6").removeClass("active");
+			$("#ff7").removeClass("active");
+			$("#ff9").removeClass("active");
+			$("#ff10").removeClass("active");
+			document.getElementById("in").innerHTML = "<div>&nbsp</div><table> <tr> <td colspan='4'> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr><tr> <td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr></table>";
+		}
+		document.getElementById('f6').onclick = function(){
+			$("#ff1").removeClass("active");
+			$("#ff2").removeClass("active");
+			$("#ff3").removeClass("active");
+			$("#ff4").removeClass("active");
+			$("#ff5").removeClass("active");
+			$("#ff6").addClass("active");
+			$("#ff7").removeClass("active");
+			$("#ff9").removeClass("active");
+			$("#ff10").removeClass("active");
+			document.getElementById("in").innerHTML = "<div>&nbsp</div><table> <tr> <td colspan='2' rowspan='2'> <select class='selectFive'> "+x+" </select> </td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr><tr> <td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr><tr> <td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr></table>";
+		}
+		document.getElementById('f7f8').onclick = function(){
+			$("#ff1").removeClass("active");
+			$("#ff2").removeClass("active");
+			$("#ff3").removeClass("active");
+			$("#ff4").removeClass("active");
+			$("#ff5").removeClass("active");
+			$("#ff6").removeClass("active");
+			$("#ff7").addClass("active");
+			$("#ff9").removeClass("active");
+			$("#ff10").removeClass("active");
+			document.getElementById("in").innerHTML = "<div>&nbsp</div><table> <tr> <td colspan='3' rowspan='3'> <select class='selectFive'> "+x+" </select> </td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr><tr> <td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr><tr> <td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr><tr> <td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr></table>";
+		}
+		document.getElementById('f9').onclick = function(){
+			$("#ff1").removeClass("active");
+			$("#ff2").removeClass("active");
+			$("#ff3").removeClass("active");
+			$("#ff4").removeClass("active");
+			$("#ff5").removeClass("active");
+			$("#ff6").removeClass("active");
+			$("#ff7").removeClass("active");
+			$("#ff9").addClass("active");
+			$("#ff10").removeClass("active");
+			document.getElementById("in").innerHTML = "<div>&nbsp</div><table> <tr> <td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr><tr> <td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr><tr> <td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr></table>";
+		}
+		document.getElementById('f10').onclick = function(){
+			$("#ff1").removeClass("active");
+			$("#ff2").removeClass("active");
+			$("#ff3").removeClass("active");
+			$("#ff4").removeClass("active");
+			$("#ff5").removeClass("active");
+			$("#ff6").removeClass("active");
+			$("#ff7").removeClass("active");
+			$("#ff9").removeClass("active");
+			$("#ff10").addClass("active");
+			document.getElementById("in").innerHTML = "<div>&nbsp</div><div> <table class='table10' style='float: left'> <tr> <td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr><tr> <td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr><tr> <td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr><tr> <td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr></table> <table class='table10' style='float: right'> <tr> <td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr><tr> <td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td rowspan='2' colspan='2'> <select class='selectFive'> "+x+" </select> &nbsp </td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr><tr> <td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr><tr> <td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td><td> <div class='five'> <select class='selectFive'> "+x+" </select> &nbsp </div></td></tr></table> </div>";
+		}
+	</script>
+	<script type="text/javascript">
+		//sends to the mcu a command to do something to the participent
+		document.getElementById("mute").onclick = function(){
+			var ip = $("#sel").find('option:selected').attr('value');
+			//mcu api
+		}
+		document.getElementById("volumeup").onclick = function(){
+			var ip = $("#sel").find('option:selected').attr('value');
+			//mcu api
+		}
+		document.getElementById("volumedown").onclick = function(){
+			var ip = $("#sel").find('option:selected').attr('value');
+			//mcu api
+		}
+		document.getElementById("camblock").onclick = function(){
+			var ip = $("#sel").find('option:selected').attr('value');
+			//mcu api
+		}
+		document.getElementById("camunblock").onclick = function(){
+			var ip = $("#sel").find('option:selected').attr('value');
+			//mcu api
+		}
+		document.getElementById("micmute").onclick = function(){
+			var ip = $("#sel").find('option:selected').attr('value');
+			//mcu api
+		}
+		document.getElementById("micunmute").onclick = function(){
+			var ip = $("#sel").find('option:selected').attr('value');
+			//mcu api
+		}
+	</script>
+{% endblock %}
