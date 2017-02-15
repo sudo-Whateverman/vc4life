@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="861653bf-9bb3-4969-97fb-59748e2472c1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/forms.py" afterPath="$PROJECT_DIR$/callcenter/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callcenter/views/videoconference_views.py" afterPath="$PROJECT_DIR$/callcenter/views/videoconference_views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vc4life.iws" />
@@ -37,20 +36,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/callcenter/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="64" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.5413534">
+              <caret line="40" column="118" selection-start-line="40" selection-start-column="118" selection-end-line="40" selection-end-column="118" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="videoconference_views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="videoconference_views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/callcenter/views/videoconference_views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5263158">
+            <state vertical-scroll-proportion="0.0">
               <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
               <folding />
             </state>
@@ -152,8 +151,8 @@
         <option value="$PROJECT_DIR$/callcenter/views/misc_views.py" />
         <option value="$PROJECT_DIR$/callcenter/templates/troubleshoot/setup.html" />
         <option value="$PROJECT_DIR$/callcenter/templates/base.html" />
-        <option value="$PROJECT_DIR$/callcenter/forms.py" />
         <option value="$PROJECT_DIR$/callcenter/views/videoconference_views.py" />
+        <option value="$PROJECT_DIR$/callcenter/forms.py" />
       </list>
     </option>
   </component>
@@ -499,12 +498,6 @@
       <option name="number" value="Default" />
       <updated>1486757105523</updated>
     </task>
-    <task id="LOCAL-00025" summary="-- changed the views placement to make smaller modules">
-      <created>1486919141668</created>
-      <option name="number" value="00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1486919141668</updated>
-    </task>
     <task id="LOCAL-00026" summary="-- made a test page">
       <created>1486926338682</created>
       <option name="number" value="00026" />
@@ -793,7 +786,13 @@
       <option name="project" value="LOCAL" />
       <updated>1487117215275</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="-- vc_create fail is fixed fixed fixed">
+      <created>1487117653458</created>
+      <option name="number" value="00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1487117653458</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -846,7 +845,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="-- added rmx version and api" />
     <MESSAGE value="-- migrations" />
     <MESSAGE value="-- changed problem to be verbose" />
     <MESSAGE value="-- added login to everything" />
@@ -871,7 +869,8 @@
     <MESSAGE value="-- setup added" />
     <MESSAGE value="-- vc_create fail is fixed" />
     <MESSAGE value="-- vc_create fail is fixed fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- vc_create fail is fixed fixed" />
+    <MESSAGE value="-- vc_create fail is fixed fixed fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- vc_create fail is fixed fixed fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1262,10 +1261,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/callcenter/forms.py">
+    <entry file="file://$PROJECT_DIR$/callcenter/views/videoconference_views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="64" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="64" />
+          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -1280,10 +1279,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/callcenter/views/videoconference_views.py">
+    <entry file="file://$PROJECT_DIR$/callcenter/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5263158">
-          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.5413534">
+          <caret line="40" column="118" selection-start-line="40" selection-start-column="118" selection-end-line="40" selection-end-column="118" />
           <folding />
         </state>
       </provider>
